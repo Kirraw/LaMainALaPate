@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'inscription</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>La Main À La Pâte</title>
 </head>
+
 <body>
-    <!-- HEADER -->
-    <header>
-    <figure>
-        <img src="./Images/Logo.png" alt="logo" width="80">
-        <h1>La Main à la pâte</h1>
+  <!-- HEADER -->
+  <header class="topnavbar">
+    <figure id="logo">
+        <a href="index.html">
+            <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80"/></a>
     </figure>
-    </header>
-    <!-- MAIN -->
-    <main>
+    <h1>La Main À La Pâte</h1>
+    <nav></nav>
+  </header>
+  <!-- MAIN -->
+  <main>
     <section>
-        <h2>INSCRIPTION</h2>
-        <form action="" method="get" id="inscription">
-            <label for="last-name">Nom :
-                <input type="text" name="last-name" id="last-name" required>
-            </label><br>
-            <label for="name">Prènom :
-                <input type="text" name="name" id="name" required>
-            </label><br>
-            <label for="email">Adresse Email :
-                <input type="email" name="email" id="email" required>
-            </label><br>
-            <label for="password">Mot de passe :
-                <input type="text" name="password" id="password" required>
-            </label><br>
-            <label for="confirmpassword">Confirmation du mot de passe :
-                <input type="text" name="confirmpassword" id="confirmpassword" required>
-            </label><br>
-        </form>
-        <img src="./Images/formulaire-de-contact.png" alt="formulaire-de-contact" width="80">
-        <button type="submit">Créer votre compte</button>
+      <h2>INSCRIPTION</h2>
+      <form action="" method="post" id="inscription">
+        <label for="last-name">Nom :
+          <input type="text" name="last-name" id="last-name" required /> </label><br />
+        <label for="name">Prènom :
+          <input type="text" name="name" id="name" required /> </label><br />
+        <label for="email">Adresse Email :
+          <input type="email" name="email" id="email" required /> </label><br />
+        <label for="password">Mot de passe :
+          <input type="text" name="password" id="password" required /> </label><br />
+        <label for="confirmpassword">Confirmation du mot de passe :
+          <input type="text" name="confirmpassword" id="confirmpassword" required /> </label><br />
+      </form>
+      <img src="./Images/formulaire-de-contact.png" alt="formulaire-de-contact" width="80" />
+      <button type="submit">Créer votre compte</button>
     </section>
-    </main>
-    <!-- FOOTER -->
-    <footer>
-        <h2>mentions légales, paramètres cookies, RGPD etc.</h2>
-    </footer>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <h2>mentions légales, paramètres cookies, RGPD etc.</h2>
+  </footer>
 </body>
+
 </html>

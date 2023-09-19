@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page D'accueil Enfant</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>La Main À La Pâte</title>
 </head>
+
 <body>
-<header>
-          <!-- HEADER contenant logo, nom ndu site, bouton profil, bouton deconnexion, navbar -->
-       <figure>
-        <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
-    </figure>
-    <h1>La main à la pâte</h1>
-    <button type="button">Profil</button>
-    <button type="button">Se déconnecter</button> <br>
-    <a href="accueilenfant.html">Accueil</a>
-    <a href="planningenfant.html">Planning</a>
-</header>
-<!-- MAIN -->
-<main>
-    <figure>
-        <img src="./Images/profil.png" alt="image de profil" width="80"><br>
-        <button><a href="profilenfant.html">Editer mon profil</button></a><br>
-        <img src="./Images/liste.png" alt="image de planning" width="80"><br>
-        <button><a href="planningenfant.html">Voir mon planning</button></a>
-    </figure>
-</main>
+    <header>
+        <!-- HEADER contenant logo, nom ndu site, bouton profil, bouton deconnexion, navbar -->
+        <div class="topnavbar">
+            <figure id="logo">
+                <a href="accueilenfant.html" target="_blank">
+                    <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80"></a>
+            </figure>
+            <h1>La Main À La Pâte</h1>
+            <section class="buttonheader">
+                <button type="button"><a href="profilenfant.html">Profil</button></a>
+                <button type="button"><a href="index.html">Se déconnecter</button></a> <br>
+            </section>
+        </div>
+        <nav>
+            <a href="accueilenfant.html">Accueil</a>
+            <a href="planningenfant.html">Planning</a>
+        </nav>    
+    </header>
+    <!-- MAIN -->
+    <main>
+        <figure>
+            <img src="./Images/profil.png" alt="image de profil" width="80"><br>
+            <button><a href="profilenfant.html">Editer mon profil</button></a><br>
+            <img src="./Images/liste.png" alt="image de planning" width="80"><br>
+            <button><a href="planningenfant.html">Voir mon planning</button></a>
+        </figure>
+    </main>
     <footer>
         <h2>mentions légales, paramètres cookies, RGPD etc.</h2>
     </footer>
 </body>
+
 </html>
