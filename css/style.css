@@ -4,4 +4,8 @@
 }
 body {
     font-family: 'skullbones', Courier, monospace;
+    
+}
+header{
+    background: linear-gradient(rgba(72, 158, 206, 1),rgba(253, 185, 146, 1));
 }
