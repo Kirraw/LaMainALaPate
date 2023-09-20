@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "skullbones";
+    src: url(/Polices/SKULL\ BONES\ Bold22.otf);
+}
+body {
+    font-family: 'skullbones', Courier, monospace;
+}
