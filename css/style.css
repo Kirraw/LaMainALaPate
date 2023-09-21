@@ -2,6 +2,17 @@
     font-family: "skullbones";
     src: url(/Polices/SKULL\ BONES\ Bold22.otf);
 }
+header {
+    display: flex;
+    position: fixed;
+    border-bottom: 2px solid black;
+    margin: 0px 0px;
+    background-color: blue;
+}
 body {
     font-family: 'skullbones', Courier, monospace;
+    margin: 0px 0px;
+}
+main {
+    padding-top: 150px;
 }
