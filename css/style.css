@@ -2,17 +2,27 @@
     font-family: "skullbones";
     src: url(/Polices/SKULL\ BONES\ Bold22.otf);
 }
-header {
-    display: flex;
-    position: fixed;
-    border-bottom: 2px solid black;
-    margin: 0px 0px;
-    background: linear-gradient(rgba(72, 158, 206, 1),rgba(253, 185, 146, 1));
-}
 body {
     font-family: 'skullbones', Courier, monospace;
-    margin: 0px px;
+    margin: 0px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid black;
+    background: linear-gradient(rgba(72, 158, 206, 1),rgba(253, 185, 146, 1));
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 main {
-    padding-top: 125px;
+    padding-top: 130px;
+    text-align: center;
+}
+p {
+    margin: 10px 10%;
+}
+footer{
+    text-align: center;
 }
