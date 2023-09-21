@@ -11,8 +11,8 @@ header {
 }
 body {
     font-family: 'skullbones', Courier, monospace;
-    margin: 0px 0px;
+    margin: 0px px;
 }
 main {
-    padding-top: 150px;
+    padding-top: 125px;
 }
