@@ -2,8 +2,12 @@
     font-family: "skullbones";
     src: url(/Polices/SKULL\ BONES\ Bold22.otf);
 }
+@font-face {
+    font-family: "handlee";
+    src: url(/Polices/Handlee-Regular.ttf);
+}
 body {
-    font-family: 'skullbones', Courier, monospace;
+    font-family: "handlee", cursive;
     margin: 0px;
 }
 header {
@@ -19,6 +23,9 @@ header {
 main {
     padding-top: 130px;
     text-align: center;
+}
+h2 {
+    font-family: 'skullbones', Courier, monospace;
 }
 p {
     margin: 10px 10%;
