@@ -11,7 +11,7 @@
     src: url(/Polices/Cream\ Cake.otf);
 }
 header{
-    font-family: "partyday", cursive; 
+    font-family: "creamcake", cursive; 
     position: fixed;
     width: 100%;
     height: 100px;
@@ -30,7 +30,6 @@ body {
     font-family: "handlee", cursive;
     margin: 0px;
 }
-
 h1 {
     font-family: "creamcake";
     font-size: 85px;
@@ -53,12 +52,6 @@ button {
 }
 footer{
     align-items: flex-end;
-    text-align: center;
-}
-footer{
-    text-align: center;
-}
-footer{
     text-align: center;
 }
 #vue_ensemble {
