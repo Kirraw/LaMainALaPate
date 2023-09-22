@@ -100,4 +100,16 @@ footer {
 }
 #acces_profil_parent, #acces_dashboard_parent {
     border-radius: 50px;
+    }
+#imgprofil, #imgdashboard {
+    transform: scale(1);
+    transition-duration: 1s;
+}
+#imgprofil:hover {
+    transform: scale(1.5);
+    transition-timing-function: ease-in-out;
+}
+#imgdashboard:hover {
+    transform: scale(1.5);
+    transition-timing-function: ease-in-out;
 }
