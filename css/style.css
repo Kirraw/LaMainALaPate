@@ -22,9 +22,12 @@ header{
     align-items: center;
     justify-content: center;   
 }
-#logoplanning{
-    flex-direction: row;
-    justify-content: flex-start;
+#logo{
+    transition: transform 200ms;
+    width: 100px;
+}
+#logo:hover{
+    transform: translateY(-10px);
 }
 body {
     font-family: "handlee", cursive;
