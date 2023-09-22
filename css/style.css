@@ -20,6 +20,13 @@ header {
     flex-direction: row;
     align-items: center;
 }
+#logo{
+    transition: transform 200ms;
+    width: 100px;
+}
+#logo:hover{
+    transform: translateY(-10px);
+}
 main {
     padding-top: 130px;
     text-align: center;
@@ -27,15 +34,17 @@ main {
 h2 {
     font-family: 'skullbones', Courier, monospace;
 }
-img {
-    width: 100px;
-    height: 100px;
-}
 p {
     margin: 10px 10%;
 }
 button {
     font-family: "handlee", cursive; 
+}
+footer{
+    text-align: center;
+}
+footer{
+    text-align: center;
 }
 footer{
     text-align: center;
