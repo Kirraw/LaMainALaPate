@@ -40,3 +40,19 @@ button {
 footer{
     text-align: center;
 }
+#vue_ensemble {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+#editer_profil_button, #gerer_profil_button, #voir_membres_button, #gerer_taches_button, #voir_planning_button {
+    width: 200px;
+    max-width: 400px;
+    min-width: 50%;
+    height: 40px;
+    max-height: 40px;
+    min-height: 10%;
+    border-radius: 5px;
+    margin: 50px
+}
