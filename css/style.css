@@ -49,9 +49,25 @@ p {
     margin: 10px 10%;
 }
 button {
+    background-color: #b4aabb;
+    border-style: groove;
+    border-radius: 10px;
     font-family: 'skullbones', Courier, monospace; 
 }
-footer{
+button:hover {
+    background-color: #fcb48a;
+    color: rgb(40, 10, 80);
+}
+a:link {
+    color: darkblue;
+}
+a:visited {
+    color: rgb(40, 10, 80);
+}
+a:hover {
+    color: rgb(145, 45, 45); 
+}
+footer {
     align-items: flex-end;
     text-align: center;
 }
