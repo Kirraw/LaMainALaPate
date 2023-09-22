@@ -10,6 +10,10 @@
     font-family: "creamcake";
     src: url(/Polices/Cream\ Cake.otf);
 }
+body {
+    font-family: "handlee", cursive;
+    margin: 0px;
+}
 header{
     font-family: "creamcake", cursive; 
     position: fixed;
@@ -22,15 +26,18 @@ header{
     align-items: center;
     justify-content: center;   
 }
-#logoplanning{
-    flex-direction: row;
-    justify-content: flex-start;
-}
+
 body {
     font-family: "handlee", cursive;
     margin: 0px;
 }
-
+#logo{
+    transition: transform 200ms;
+    width: 100px;
+}
+#logo:hover{
+    transform: translateY(-10px);
+}
 h1 {
     font-family: "creamcake";
     font-size: 85px;
@@ -71,7 +78,6 @@ footer {
     align-items: flex-end;
     text-align: center;
 }
-
 #vue_ensemble {
     display: flex;
     flex-direction: row;
