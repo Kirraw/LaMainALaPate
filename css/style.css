@@ -48,7 +48,42 @@ h2 {
 p {
     margin: 10px 10%;
 }
+button {
+    font-family: "handlee", cursive; 
+}
 footer{
     align-items: flex-end;
     text-align: center;
+}
+footer{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+#vue_ensemble {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+#editer_profil_button, #gerer_profil_button, #voir_membres_button, #gerer_taches_button, #voir_planning_button {
+    width: 200px;
+    max-width: 400px;
+    min-width: 50%;
+    height: 40px;
+    max-height: 40px;
+    min-height: 10%;
+    border-radius: 5px;
+    margin: 30px
+}
+#body_vue_ensemble_parent {
+    background-image: url(/LaMainALaPate/Images/vueensemble2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#acces_profil_parent, #acces_dashboard_parent {
+    background-color: rgba(200, 200, 200, 0.6);
+    margin:2%
 }

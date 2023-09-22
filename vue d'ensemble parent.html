@@ -8,7 +8,7 @@
     <title>La main à la pâte</title>
 </head>
 
-<body>
+<body id="body_vue_ensemble_parent">
     <header>
         <!-- HEADER 2 contenant logo, nom ndu site, bouton profil, bouton deconnexion, navbar -->
         <figure>
@@ -24,24 +24,25 @@
             <a href="planningparent.html">Planning</a>
         </nav>
     </header>
-    <section>
-        <article>
+<main> 
+    <section id="vue_ensemble">
+        <article id="acces_profil_parent">
             <figure>
-                <img src="./images/profil.png" alt="Accéder au profil" title="Logo du profil" width="100">
+                <img src="./Images/profil.png" alt="Accéder au profil" title="Logo du profil" width="100">
             </figure>
-            <button type="button"><a href="gestionprofilparent.html">Editer mon profil</button></a><br>
-            <button type="button">Gérer les profils des membres</button>
+            <button id="editer_profil_button" type="button"><a href="gestionprofilparent.html">Editer mon profil</button></a><br>
+            <button id="gerer_profil_button" type="button">Gérer les profils des membres</button>
         </article>
-        <article>
+        <article id="acces_dashboard_parent">
             <figure>
-                <img src="./images/liste.png" alt="Accéder au tableau de bord" title="Logo du tableau de bord"
-                    width="100">
+                <img src="./Images/liste.png" alt="Accéder au tableau de bord" title="Logo du tableau de bord" width="100">
             </figure>
-            <button type="button">Voir les membres</button><br>
-            <button type="button">Gérer les tâches</button><br>
-            <button type="button">Voir mon planning</button>
+            <button id="voir_membres_button" type="button">Voir les membres</button><br>
+            <button id="gerer_taches_button" type="button">Gérer les tâches</button><br>
+            <button id="voir_planning_button" type="button">Voir mon planning</button>
         </article>
     </section>
+</main> 
     <footer>
         <h2>Mentions légales, etc.</h2>
     </footer>
