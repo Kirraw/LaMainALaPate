@@ -52,7 +52,7 @@ button {
     font-family: "handlee", cursive; 
 }
 footer{
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     justify-content: center;
     font-size: 8px;
