@@ -20,8 +20,18 @@ main {
     padding-top: 130px;
     text-align: center;
 }
+h2 {
+    font-family: 'skullbones', Courier, monospace;
+}
+img {
+    width: 100px;
+    height: 100px;
+}
 p {
     margin: 10px 10%;
+}
+button {
+    font-family: "handlee", cursive;   
 }
 footer{
     position: absolute; bottom: 0px;
