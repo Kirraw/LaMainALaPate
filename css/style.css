@@ -78,6 +78,12 @@ footer {
     align-items: flex-end;
     text-align: center;
 }
+footer{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
 #vue_ensemble {
     display: flex;
     flex-direction: row;
