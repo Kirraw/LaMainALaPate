@@ -20,12 +20,9 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;   
+    justify-content: space-between;   
 }
-#logoplanning{
-    flex-direction: row;
-    justify-content: flex-start;
-}
+
 body {
     font-family: "handlee", cursive;
     margin: 0px;
