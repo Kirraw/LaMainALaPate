@@ -2,12 +2,8 @@
     font-family: "skullbones";
     src: url(/Polices/SKULL\ BONES\ Bold22.otf);
 }
-@font-face {
-    font-family: "handlee";
-    src: url(/Polices/Handlee-Regular.ttf);
-}
 body {
-    font-family: "handlee", cursive;
+    font-family: 'skullbones', Courier, monospace;
     margin: 0px;
 }
 header {
@@ -41,5 +37,17 @@ button {
     font-family: "handlee", cursive;   
 }
 footer{
-    text-align: center;
+    position: absolute; bottom: 0px;
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid rgba(253, 185, 146, 1);
+    border-bottom: 2px solid rgba(253, 185, 146, 1);
+    background-color : rgba(253, 185, 146, 1); 
+    display : flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+    font-size: 5px;
+    
+   
 }
