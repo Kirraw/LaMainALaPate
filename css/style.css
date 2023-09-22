@@ -11,7 +11,7 @@
     src: url(/Polices/Cream\ Cake.otf);
 }
 header{
-    font-family: "partyday", cursive; 
+    font-family: "creamcake", cursive; 
     position: fixed;
     width: 100%;
     height: 100px;
@@ -49,18 +49,13 @@ p {
     margin: 10px 10%;
 }
 button {
-    font-family: "handlee", cursive; 
+    font-family: 'skullbones', Courier, monospace; 
 }
 footer{
     align-items: flex-end;
     text-align: center;
 }
-footer{
-    text-align: center;
-}
-footer{
-    text-align: center;
-}
+
 #vue_ensemble {
     display: flex;
     flex-direction: row;
@@ -68,17 +63,17 @@ footer{
     justify-content: center;
 }  
 #editer_profil_button, #gerer_profil_button, #voir_membres_button, #gerer_taches_button, #voir_planning_button {
-    width: 200px;
+    width: 300px;
     max-width: 400px;
     min-width: 50%;
-    height: 40px;
-    max-height: 40px;
+    height: 70px;
+    max-height: 100px;
     min-height: 10%;
     border-radius: 5px;
     margin: 30px
 }
 #body_vue_ensemble_parent {
-    background-image: url(/LaMainALaPate/Images/vueensemble2.jpg);
+    background-image: url(/Images/vueensemble2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -86,4 +81,7 @@ footer{
 #acces_profil_parent, #acces_dashboard_parent {
     background-color: rgba(200, 200, 200, 0.6);
     margin:2%
+}
+#acces_profil_parent, #acces_dashboard_parent {
+    border-radius: 50px;
 }
