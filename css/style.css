@@ -113,3 +113,6 @@ footer {
     transform: scale(1.5);
     transition-timing-function: ease-in-out;
 }
+#lien_edit_profilparent {
+    text-decoration: none;
+}
