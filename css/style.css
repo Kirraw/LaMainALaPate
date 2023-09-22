@@ -18,7 +18,7 @@ header{
     font-family: "creamcake", cursive; 
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-bottom: 2px solid black;
     background: linear-gradient(#489ece,#fdb992);
     display: flex;
@@ -37,8 +37,6 @@ body {
 #logo{
     transition: transform 200ms;
     width: 100px;
-    display: flex;
-    flex-direction: column;
 }
 #logo:hover{
     transform: translateY(-5px);
@@ -133,8 +131,8 @@ footer {
         font-size: 50px;
     }
 }
-@media screen and (max-width: 540px){
+@media screen and (max-width: 560px){
     h1 {
-        font-size: 25px;
+        font-size: 26px;
     }
 }
