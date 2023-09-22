@@ -10,6 +10,10 @@
     font-family: "creamcake";
     src: url(/Polices/Cream\ Cake.otf);
 }
+body {
+    font-family: "handlee", cursive;
+    margin: 0px;
+}
 header{
     font-family: "creamcake", cursive; 
     position: fixed;
@@ -28,10 +32,6 @@ header{
 }
 #logo:hover{
     transform: translateY(-10px);
-}
-body {
-    font-family: "handlee", cursive;
-    margin: 0px;
 }
 h1 {
     font-family: "creamcake";
