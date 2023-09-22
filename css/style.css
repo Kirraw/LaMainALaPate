@@ -30,6 +30,7 @@ header{
 body {
     font-family: "handlee", cursive;
     margin: 0px;
+}
 #logo{
     transition: transform 200ms;
     width: 100px;
