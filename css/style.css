@@ -54,7 +54,6 @@ nav {
     position: relative;
     top: -10px;
     transition: transform 200ms;
-    width: 100px;
 }
 #logo:hover{
     transform: translateY(-5px);
@@ -149,7 +148,7 @@ footer {
         font-size: 50px;
     }
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 680px){
     nav {
         top: -23px;
         left: 0px;
