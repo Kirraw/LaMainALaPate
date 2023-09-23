@@ -60,7 +60,7 @@ nav {
 }
 h1 {
     font-family: "creamcake";
-    font-size: 85px;
+    font-size: 5vw;
     background: -webkit-linear-gradient(#ff6f1c, #00a6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -142,21 +142,24 @@ footer {
 #lien_edit_profilparent {
     text-decoration: none;
 }
-
+/* 
 @media screen and (max-width: 1100px){
     h1 {
         font-size: 50px;
     }
-}
+} */
 @media screen and (max-width: 680px){
     nav {
         top: -23px;
         left: 0px;
         font-size: 25px;
     }
+    h1 {
+        font-size: 4vw;
+    }
 }
-@media screen and (max-width: 560px){
+/* @media screen and (max-width: 560px){
     h1 {
         font-size: 26px;
     }
-}
+} */
