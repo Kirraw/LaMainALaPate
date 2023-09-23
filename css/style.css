@@ -45,10 +45,6 @@ nav {
     top: -38px;
     left: 120px;
     font-size: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
 }
 #logo{
     position: relative;
@@ -158,8 +154,8 @@ footer {
         font-size: 4vw;
     }
 }
-/* @media screen and (max-width: 560px){
+@media screen and (max-width: 490px){
     h1 {
-        font-size: 26px;
+        font-size: 2vw;
     }
-} */
+}
