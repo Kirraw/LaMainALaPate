@@ -60,6 +60,7 @@ h1 {
     background: -webkit-linear-gradient(#ff6f1c, #00a6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
  }
 main {
     padding-top: 130px;
@@ -154,8 +155,8 @@ footer {
         font-size: 4vw;
     }
 }
-@media screen and (max-width: 490px){
+/* @media screen and (max-width: 490px){
     h1 {
         font-size: 2vw;
     }
-}
+} */
