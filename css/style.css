@@ -32,7 +32,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 .buttonheader {
     display: flex;
@@ -133,8 +133,8 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
-#body_inscription-connexion {
-    background-image: url(/Images/pageconnexion-inscription.jpg);
+#body_planning_parent {
+    background-image: url(/Images/planningparent-taches.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -188,6 +188,6 @@ footer {
 
 
 
-}
+
 
 
