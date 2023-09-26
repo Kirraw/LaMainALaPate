@@ -137,6 +137,12 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
+#body_index {
+    background-image: url(/Images/index.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 #acces_profil, #acces_dashboard {
     background-color: rgba(200, 200, 200, 0.6);
     margin:2%
