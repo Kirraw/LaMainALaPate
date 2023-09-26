@@ -32,7 +32,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 .buttonheader {
     display: flex;
@@ -125,17 +125,41 @@ footer {
     border-radius: 5px;
     margin: 30px
 }
-#body_vue_ensemble_parent {
+#body_vue_ensemble {
     background-image: url(/Images/vueensemble2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-#acces_profil_parent, #acces_dashboard_parent {
+#body_planning_parent, #body_tache {
+    background-image: url(/Images/planningparent-taches-transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_planning_enfant {
+    background-image: url(/Images/planningenfant.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_inscription-connexion {
+    background-image: url(/Images/pageconnexion-inscription.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_index {
+    background-image: url(/Images/index.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#acces_profil, #acces_dashboard {
     background-color: rgba(200, 200, 200, 0.6);
     margin:2%
 }
-#acces_profil_parent, #acces_dashboard_parent {
+#acces_profil, #acces_dashboard {
     border-radius: 50px;
     }
 #imgprofil, #imgdashboard {
@@ -150,7 +174,7 @@ footer {
     transform: scale(1.5);
     transition-timing-function: ease-in-out;
 }
-#lien_edit_profilparent {
+#lien_dashboard {
     text-decoration: none;
 }
 /* 
@@ -174,12 +198,3 @@ footer {
         font-size: 2vw;
     }
 } */
-
-
-    
-
-
-
-}
-
-

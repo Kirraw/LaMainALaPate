@@ -8,7 +8,7 @@
     <title>La Main À La Pâte</title>
 </head>
 
-<body>
+<body id="body_vue_ensemble">
     <header>
         <!-- HEADER contenant logo, nom ndu site, bouton profil, bouton deconnexion, navbar -->
         <div class="topnavbar">
@@ -29,15 +29,22 @@
     </header>
     <!-- MAIN -->
     <main>
-        <figure>
-            <img src="./Images/profil.png" alt="image de profil" width="80"><br>
-            <button><a href="profilenfant.html">Editer mon profil</button></a><br>
-            <img src="./Images/liste.png" alt="image de planning" width="80"><br>
-            <button><a href="planningenfant.html">Voir mon planning</button></a>
-        </figure>
+        <section id="vue_ensemble">
+            <article id="acces_profil">
+                <figure>
+                <img id="imgprofil" src="./Images/profil.png" alt="image de profil" width="100"></figure>
+                <button id="editer_profil_button" type="button"><a id="lien_dashboard" href="profilenfant.html">Editer mon profil</button></a> <br>
+            </article>
+            <article id="acces_dashboard">
+                <figure>
+                <img id="imgdashboard" src="./Images/liste.png" alt="image de planning" width="100"></figure>
+                <button id="voir_planning_button" type="button"><a id="lien_dashboard" href="planningenfant.html">Voir mon planning</button></a>
+            </article>
+        </section>
     </main>
+<!-- footer -->    
     <footer>
-        <h2>mentions légales, paramètres cookies, RGPD etc.</h2>
+        <h2>Mentions légales, paramètres cookies, RGPD etc.</h2>
     </footer>
 </body>
 
