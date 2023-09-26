@@ -40,6 +40,9 @@ header{
     flex-direction: column;
     margin-right: 25px;
 }
+.buttonheader button a{
+    text-decoration: none;
+}
 nav {
     position: relative;
     top: -38px;
