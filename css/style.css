@@ -106,8 +106,6 @@ footer {
     margin: 0px;
     position: fixed;
     bottom: 0;
-
-
 }
 
 
@@ -135,6 +133,15 @@ footer {
 }
 #body_planning_parent, #body_tache {
     background-image: url(/Images/planningparent-taches-transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_planning_enfant {
+    background-image: url(/Images/planningenfant.png);
+}
+#body_index {
+    background-image: url(/Images/index.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -182,12 +189,3 @@ footer {
         font-size: 2vw;
     }
 } */
-
-
-    
-
-
-
-
-
-
