@@ -139,6 +139,15 @@ footer {
 }
 #body_planning_enfant {
     background-image: url(/Images/planningenfant.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_inscription-connexion {
+    background-image: url(/Images/pageconnexion-inscription.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #body_index {
     background-image: url(/Images/index.jpg);
