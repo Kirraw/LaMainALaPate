@@ -120,6 +120,12 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
+#body_planning_parent {
+    background-image: url(/Images/planningparent-taches.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 #acces_profil_parent, #acces_dashboard_parent {
     background-color: rgba(200, 200, 200, 0.6);
     margin:2%
