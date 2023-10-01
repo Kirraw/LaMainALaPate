@@ -177,6 +177,12 @@ footer {
     background-size: cover;
 }
 
+#body_membre {  
+    background-image: url(/Images/visualisationmembre_transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 #acces_profil, #acces_dashboard {
     background-color: rgba(200, 200, 200, 0.6);
