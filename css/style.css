@@ -163,7 +163,19 @@ footer {
     background-size: cover;
 }
 
+#body_profil_parent {  
+    background-image: url(/Images/gestionmembre_transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+#body_profil_enfant {  
+    background-image: url(/Images/gestionmembre_transparent.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 
 #acces_profil, #acces_dashboard {
