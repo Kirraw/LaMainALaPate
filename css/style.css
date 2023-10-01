@@ -155,28 +155,12 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
-
-#body_profil_membre {  
-    background-image: url(/Images/gestionmembre_transparent.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 #body_profil_parent {  
     background-image: url(/Images/gestionmembre_transparent.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-#body_profil_enfant {  
-    background-image: url(/Images/gestionmembre_transparent.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 #body_membre {  
     background-image: url(/Images/visualisationmembre_transparent.png);
     background-repeat: no-repeat;
