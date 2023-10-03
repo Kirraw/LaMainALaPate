@@ -19,7 +19,6 @@ header{
     position: fixed;
     width: 100%;
     height: 120px;
-    border-bottom: 2px solid black;
     background: linear-gradient(#489ece,#fdb992);
     /* display: flex;
     flex-direction: row;
@@ -35,8 +34,8 @@ header{
     justify-content: space-between;   
 }
 .buttonheader {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
     margin-right: 25px;
 }
