@@ -247,6 +247,15 @@ margin-top: 1rem;
 }
 /* fin de la partie mise en forme du formulaire page d'accueil  */
 
+/* mise en forme footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6px;
+}
+/* fin de la mise en forme du footer */
+
 /* 
 @media screen and (max-width: 1100px){
     h1 {
