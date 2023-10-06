@@ -160,6 +160,12 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
+#body_tache {
+    background-image: url(/Images/taches.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* fin des fonds d'écrans */
 
 #acces_profil, #acces_dashboard {
