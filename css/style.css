@@ -215,10 +215,12 @@ margin-top: 1rem;
 .jour {
     display: flex;
     flex-direction: column;
-    margin:1%;
     width: calc(100%/7);
+}
+.jour h3 {
     background-color: #fcb48a;
     border-style: solid;
+    margin:1%;
 }
 /* FIN MISE EN FORME CALENDRIER SEMAINE */
 
