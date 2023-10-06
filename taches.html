@@ -18,14 +18,27 @@
     <main>
         <section>
             <form action="" method="get" id="newTask">
-                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche">
-                <input type="datetime-local" name="taskDate" id="taskDate"><br>
-                
-                <label for="attribution">à attribuer à :</label><br>
+                <label for="taskName">Nom de la nouvelle tâche :</label>
+                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche"><br><br>
+                <label for="taskDay">Sélectionnez un jour :</label>
+                <select name="taskDay" id="taskDay">
+                    <option value="lundi" selected="selected">lundi</option>
+                    <option value="mardi" selected="selected">mardi</option>
+                    <option value="mercredi" selected="selected">mercredi</option>
+                    <option value="jeudi" selected="selected">jeudi</option>
+                    <option value="vendredi" selected="selected">vendredi</option>
+                    <option value="samedi" selected="selected">samedi</option>
+                    <option value="dimanche" selected="selected">dimanche</option>
+                </select><br><br>
+                <label for="hour">Sélectionnez l'heure :</label>
+                <input type="time" name="hour" id="hour"><br><br>
+                <label for="attribution">à attribuer à :</label>
                 <input type="radio" name="attribution" id="bob"><label for="bob">Bob</label>
-                <input type="radio" name="attribution" id="justine"><label for="justine">Justine</label><br>
-                <label for="pinCode">Code Pin</label>
-                <input type="text" name="pinCode" id="pinCode"><br>
+                <input type="radio" name="attribution" id="justine"><label for="justine">Justine</label><br><br>
+                <label for="userName">Nom d'utilisateur :</label>
+                <input type="text" name="userName" id="userName"><br><br>
+                <label for="pinCode">Code Pin :</label>
+                <input type="text" name="pinCode" id="pinCode"><br><br>
                 <button type="submit" value="addTask">Ajouter Tache</button>
             </form>
         </section>
