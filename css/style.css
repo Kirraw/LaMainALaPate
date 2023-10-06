@@ -268,7 +268,7 @@ margin-top: 1rem;
         font-size: 2vw;
     }
 } */
-th{
+/* th{
     background-color: #0b8c9d57
 }
 th,td{
@@ -286,5 +286,18 @@ tr{
     font-family: 'simpleSummer', sans-serif;
     font-weight: bolder;
     font-size: 25px;
-}
+} */
 
+/* main{
+    border: 5px solid blue;
+    display: flex;
+} */
+ ul {
+    list-style-type: none;
+ }
+ li {
+    border: 2px solid red;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+  }
