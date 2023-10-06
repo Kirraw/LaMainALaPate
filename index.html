@@ -18,6 +18,7 @@
         <nav></nav>
     </header>
     <main>
+        <!-- section description -->
         <section>
             <h2>La main à la pâte : le numérique au service de votre organisation familiale</h2>
             <p>Débordés par vos tâches quotidiennes ? Stressés par la possibilité d’oublier certaines tâches ? LA MAIN A
@@ -26,24 +27,110 @@
                 de temps avec ceux que vous aimez !</p>
             <hr />
         </section>
+
+        <!-- section images -->
         <section>
             <h2>images</h2>
             <hr />
         </section>
+
+        <!-- section formulaire -->
         <section>
             <p>Ça vous intéresse ? A vous de mettre la main à la pâte !</p>
-            
-            <!-- <section>
-                <a href="connexionparent.html"><button>Je suis un parent</button></a>
-                <a href="connexionenfant.html"><button>Je suis un enfant</button></a>
-            </section> -->
-            <hr />
+            <button type="button" id="buttonSwitch">Je m'enregistre</button>
+            <form action="" method="post" class="hidden" id="inscriptionForm">
+                <!-- nom & password -->
+                <label for="user">Nom d'utilisateur</label>
+                <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom" required><br>
+                <label for="password">Code PIN</label>
+                <input type="password" name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required><br>
+                <!-- choix de l'avatar -->
+                <p>Choisissez votre avatar : </p>
+                <input type="radio" name="avatar" id="avatar1">
+                <label for="avatar1">
+                    <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar2">
+                <label for="avatar2">
+                    <img src="./Images/femme brune.png" alt="avatar de femme" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar3">
+                <label for="avatar3">
+                    <img src="./Images/femme chatain.png" alt="avatar de femme" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar4">
+                <label for="avatar4">
+                    <img src="./Images/homme blond.png" alt="avatar d'homme" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar5">
+                <label for="avatar5">
+                    <img src="./Images/homme brun.png" alt="avatar d'homme" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar6">
+                <label for="avatar6">
+                    <img src="./Images/homme chatain.png" alt="avatar d'homme" class="avatar_icone">
+                </label><br>
+                <input type="radio" name="avatar" id="avatar7">
+                <label for="avatar7">
+                    <img src="./Images/fille2.png" alt="avatar de fille" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar8">
+                <label for="avatar8">
+                    <img src="./Images/fille1.png" alt="avatar de fille" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar9">
+                <label for="avatar9">
+                    <img src="./Images/fille3.png" alt="avatar de fille" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar10">
+                <label for="avatar10">
+                    <img src="./Images/garcon3.png" alt="avatar de garçon" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar11">
+                <label for="avatar11">
+                    <img src="./Images/garcon2.png" alt="avatar de garçon" class="avatar_icone">
+                </label>
+                <input type="radio" name="avatar" id="avatar12">
+                <label for="avatar12">
+                    <img src="./Images/garcon1.png" alt="avatar de garçon" class="avatar_icone">
+                </label><br>
+                <!-- choix de la couleur -->
+                <p> Choisissez votre couleur : </p>
+                <input type="radio" name="color" id="color1">
+                <label for="color1">
+                    <div class="vignetteColor fondRouge"></div>
+                </label>
+                <input type="radio" name="color" id="color2">
+                <label for="color2">
+                    <div class="vignetteColor fondVert"></div>
+                </label>
+                <input type="radio" name="color" id="color3">
+                <label for="color3">
+                    <div class="vignetteColor fondJaune"></div>
+                </label>
+                <input type="radio" name="color" id="color4">
+                <label for="color4">
+                    <div class="vignetteColor fondBleu"></div>
+                </label>
+                <input type="radio" name="color" id="color5">
+                <label for="color5">
+                    <div class="vignetteColor fondOrange"></div>
+                </label>
+                <input type="radio" name="color" id="color6">
+                <label for="color6">
+                    <div class="vignetteColor fondMauve"></div>
+                </label><br>
+                <!-- bouton de validation -->
+                <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+            </form>
         </section>
     </main>
     <footer>
         <h2>Mentions légales, etc.</h2>
     </footer>
-    <script src="./main.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="accueil.js"></script>
 </body>
 
 </html>
