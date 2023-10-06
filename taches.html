@@ -19,16 +19,16 @@
         <section>
             <form action="" method="get" id="newTask">
                 <label for="taskName">Nom de la nouvelle tâche :</label>
-                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche"><br><br>
+                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche" required><br><br>
                 <label for="taskDay">Sélectionnez un jour :</label>
-                <select name="taskDay" id="taskDay">
+                <select name="taskDay" id="taskDay"required>
                     <option value="lundi" selected="selected">lundi</option>
-                    <option value="mardi" selected="selected">mardi</option>
-                    <option value="mercredi" selected="selected">mercredi</option>
-                    <option value="jeudi" selected="selected">jeudi</option>
-                    <option value="vendredi" selected="selected">vendredi</option>
-                    <option value="samedi" selected="selected">samedi</option>
-                    <option value="dimanche" selected="selected">dimanche</option>
+                    <option value="mardi">mardi</option>
+                    <option value="mercredi">mercredi</option>
+                    <option value="jeudi">jeudi</option>
+                    <option value="vendredi">vendredi</option>
+                    <option value="samedi">samedi</option>
+                    <option value="dimanche">dimanche</option>
                 </select><br><br>
                 <label for="hour">Sélectionnez l'heure :</label>
                 <input type="time" name="hour" id="hour"><br><br>
@@ -39,7 +39,7 @@
                 <input type="text" name="userName" id="userName"><br><br>
                 <label for="pinCode">Code Pin :</label>
                 <input type="text" name="pinCode" id="pinCode"><br><br>
-                <button type="submit" value="addTask">Ajouter Tache</button>
+                <button type="submit" value="submitTask">Ajouter Tache</button>
             </form>
         </section>
     </main>
