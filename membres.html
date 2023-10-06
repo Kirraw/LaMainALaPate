@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <title>La Main À La Pâte</title>
+    <style>
+        #canvas1 {
+            background-color: rgb(155, 175, 205);
+        }
+    </style>
+
 </head>
 
 <body id="body_membre">
@@ -26,15 +32,20 @@
             <a href="accueilparent.html">Accueil</a>
             <a href="planningparent.html">Planning</a>
             <a href="taches.html">Liste de tâches</a>
-        </nav>       
+        </nav>
     </header>
     <main>
         <section>
             <h2>Liste comptes parents</h2>
             <ul>
+
+                <li> David</li>
                 
-                <li>David</li>
+                <canvas id='canvas1' width='500' height='100'></canvas>
+                
                 <li>Marie</li>
+                <canvas id='canvas1' width='500' height='100'></canvas>
+                
             </ul>
         </section>
         <section>
@@ -46,9 +57,14 @@
         </section>
     </main>
     <footer>
-       <h2>Mentions légales</h2> 
+        <h2>Mentions légales</h2>
     </footer>
-    <script src="./membre.js"></script>
+    <script>
+        var canvas = document.getElementById('canvas1');
+        var contexte = canvas.getContext('2d');
+
+
+    </script>
 </body>
 
 </html>
