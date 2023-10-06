@@ -97,20 +97,6 @@ a:visited {
 a:hover {
     color: rgb(145, 45, 45); 
 }
-footer {
-    align-items: bottom;
-    text-align: center;
-    font-size: 4px;
-    width: 100%;
-    height: 40px;
-    border-top: 2px solid #fdb992;
-    border-bottom: 2px solid #fdb992;
-    background-color: #fcb48a ;
-    margin: 0px;
-    position: fixed;
-    bottom: 0;
-}
-
 
 #vue_ensemble {
     display: flex;
@@ -128,26 +114,10 @@ footer {
     border-radius: 5px;
     margin: 30px
 }
-#body_vue_ensemble {
-    background-image: url(/Images/vueensemble2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-#body_planning_parent, #body_tache {
-    background-image: url(/Images/planningparent-taches-transparent.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-#body_planning_enfant {
-    background-image: url(/Images/planningenfant.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-#body_inscription-connexion {
-    background-image: url(/Images/pageconnexion-inscription.jpg);
+
+/* fonds d'écrans */
+#body_calendrier {
+    background-image: url(/Images/planningtransparent.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -158,42 +128,32 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }
-#body_profil_parent {  
-    background-image : url(/Images/gestionmembre_transparent.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    
-}
 #body_membre {  
-    background-image: url(/Images/visualisationmembre_transparent.png);
+    background-image: url(/Images/membres.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+#body_cgu {
+    background-image: url(/Images/cgu.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_reset {
+    background-image: url(/Images/reset.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#body_tache {
+    background-image: url(/Images/taches.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* fin des fonds d'écrans */
 
-#acces_profil, #acces_dashboard {
-    background-color: rgba(200, 200, 200, 0.6);
-    margin:2%
-}
-#acces_profil, #acces_dashboard {
-    border-radius: 50px;
-    }
-#imgprofil, #imgdashboard {
-    transform: scale(1);
-    transition-duration: 1s;
-}
-#imgprofil:hover {
-    transform: scale(1.5);
-    transition-timing-function: ease-in-out;
-}
-#imgdashboard:hover {
-    transform: scale(1.5);
-    transition-timing-function: ease-in-out;
-}
-#lien_dashboard {
-    text-decoration: none;
-}
 /* mise en forme du formulaire page d'accueil */
 #inscriptionForm {
     margin-top: 1rem;
@@ -246,6 +206,23 @@ margin-top: 1rem;
     background-color: rgb(139, 75, 139);
 }
 /* fin de la partie mise en forme du formulaire page d'accueil  */
+
+/* mise en forme footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 6px;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid #fdb992;
+    border-bottom: 2px solid #fdb992;
+    background-color: #fcb48a ;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+}
+/* fin de la mise en forme du footer */
 
 /* 
 @media screen and (max-width: 1100px){

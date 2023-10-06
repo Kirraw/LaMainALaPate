@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>La Main À La Pâte</title>
+    </head>
+<body id="body_tache">
+    <header>
+        <!-- HEADER 2 contenant logo, nom ndu site, bouton "membres"-->
+        <div class="topnavbar">
+            <figure id="logo">
+                <a href="index.html">
+                    <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
+                </a>
+            </figure>
+            <h1>La Main À La Pâte</h1>
+            <section class="buttonheader">
+                <a href="membres.html"><button type="button">Membres</button></a>
+            </section>
+        </div>  
+    </header>
+    <main>
+        <section>
+            <form action="" method="get" id="newTask">
+                <label for="taskName">Nom de la nouvelle tâche :</label>
+                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche"><br><br>
+                <label for="taskDay">Sélectionnez un jour :</label>
+                <select name="taskDay" id="taskDay">
+                    <option value="lundi" selected="selected">lundi</option>
+                    <option value="mardi" selected="selected">mardi</option>
+                    <option value="mercredi" selected="selected">mercredi</option>
+                    <option value="jeudi" selected="selected">jeudi</option>
+                    <option value="vendredi" selected="selected">vendredi</option>
+                    <option value="samedi" selected="selected">samedi</option>
+                    <option value="dimanche" selected="selected">dimanche</option>
+                </select><br><br>
+                <label for="hour">Sélectionnez l'heure :</label>
+                <input type="time" name="hour" id="hour"><br><br>
+                <label for="attribution">à attribuer à :</label>
+                <input type="radio" name="attribution" id="bob"><label for="bob">Bob</label>
+                <input type="radio" name="attribution" id="justine"><label for="justine">Justine</label><br><br>
+                <label for="userName">Nom d'utilisateur :</label>
+                <input type="text" name="userName" id="userName"><br><br>
+                <label for="pinCode">Code Pin :</label>
+                <input type="text" name="pinCode" id="pinCode"><br><br>
+                <button type="submit" value="addTask">Ajouter Tache</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <section>
+            <h2>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</h2>
+        </section>
+        <section>
+            <h2>Voir nos <a href="./cgu.html">Conditions Générales d'Utilisation</a></h2>
+        </section>
+        <section>
+            <h2>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></h2>
+        </section>
+    </footer>
+</body>
+</html>
