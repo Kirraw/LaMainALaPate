@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <title>La Main À La Pâte</title>
+ 
+    
+
+        <!-- Propriété CSS : canvas pour les rectangles des profils, ".t" pour la ligne verticale-->
     <style>
-        #canvas1 {
+        #canvas2 {
             background-color: rgb(155, 175, 205);
         }
-
+     
+       
     </style>
 
 </head>
-
+  
 <body id="body_membre">
+    
+
     <header>
         <!-- HEADER 2 contenant logo, nom ndu site, bouton "membres"-->
         <div class="topnavbar">
@@ -24,7 +31,9 @@
                     <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
                 </a>
             </figure>
-            <h1>La Main À La Pâte</h1>
+            <!--<i> et <div class = t> pour ajouter ligne verticale-->
+            <h1><i>La Main À La Pâte</i></h1>
+            <div class="t"></div>
             <section class="buttonheader">
                 <a href="membres.html"><button type="button">Membres</button></a>
             </section>
@@ -36,26 +45,26 @@
         <section>
 
 
-     <!--profil enregistrer-->   
+     <!-- gestion de profil, création de deux "boîte" pour mettre en forme la page-->   
 
 
-<!--1ere colonne : liste profil-->        
+<!--1ere "boîte" : liste profil-->        
             <div id="liste_profil">
             
                 <h2>Profil membre</h2>
-            <ul>
+            
 
-                <li> David</li>
-                <div class="= Profil parent"><canvas id='canvas1' width='500' height='100'></canvas></div>
                 
-                <li>Marie</li>
-                <canvas id='canvas1' width='500' height='100'></canvas>
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
                 
-                <li>Justine</li>
-                <canvas id='canvas1' width='500' height='100'></canvas>
+                
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
+                
+                
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas> </div>
 
-                <li>Pierre</li>
-                <canvas id='canvas1' width='500' height='100'></canvas>
+                
+                <div class="= Profil parent"></div><canvas id='canvas2' width='500' height='100'></canvas> </div>
         
         </div>
 
@@ -66,27 +75,36 @@
              flex-direction: column;
             justify-content: space-around;
              position: absolute;
-             }
+             margin-right: 10;
+            margin-left: 20;
+        }
              </style>
            
         
-   <!--inscription des nouveau membre -->        
+    
   
-  <!--2eme colonne : ajouter un membre-->
+  <!--2eme boîte: ajouter un membre-->
      
    <div id="ajouter_membre">
        
         <h2>ajouter un membre</h2>
-           
+    
+     <!--image "plus" pour ajouter un membre-->   
+
+
+
     <form action="" method="post" class="" id="inscriptionForm">
             <!-- nom & password -->
             <label for="user">Nom</label>
             <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom" required><br>
             
             
-            
             <label for="password">Code PIN</label>
             <input type="password" name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required><br>
+           
+
+           
+
             <!-- choix de l'avatar -->
             <p>Choisissez votre avatar : </p>
             <input type="radio" name="avatar" id="avatar1">
@@ -163,13 +181,23 @@
             <label for="color6">
                 <div class="vignetteColor fondMauve"></div>
             </label><br>
-            <!-- bouton de validation -->
-            <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+            
+           
+            
         </form>
     
     </div>
 
-        
+    <style>#ajouter_membre
+        {
+          display : flex-end;
+           flex-direction: column;
+          justify-content: space-around;
+           position: relative right:10;
+            margin-left: 20;
+      }
+           </style>
+           
   
     
 </div>   
