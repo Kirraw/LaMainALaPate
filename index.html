@@ -9,6 +9,7 @@
 </head>
 
 <body id="body_index">
+
     <header class="topnavbar">
         <figure id="logo">
             <a href="index.html">
@@ -17,14 +18,12 @@
         <h1>La Main À La Pâte</h1>
         <nav></nav>
     </header>
+
     <main>
         <!-- section description -->
         <section>
             <h2>La main à la pâte : le numérique au service de votre organisation familiale</h2>
-            <p>Débordés par vos tâches quotidiennes ? Stressés par la possibilité d’oublier certaines tâches ? LA MAIN A
-                LA PATE vous propose un organisateur interactif à usage familial qui vous accompagnera dans la gestion
-                et la planification des tâches quotidiennes de toute la famille. Optimisez votre agenda pour passer plus
-                de temps avec ceux que vous aimez !</p>
+            <p>Débordés par vos tâches quotidiennes ? Stressés par la possibilité d’oublier certaines tâches ? <br>LA MAIN A LA PATE vous propose un organisateur interactif à usage familial qui vous accompagnera dans la gestion et la planification des tâches quotidiennes de toute la famille. <br>Optimisez votre agenda pour passer plus de temps avec ceux que vous aimez !</p>
             <hr />
         </section>
 
@@ -35,111 +34,123 @@
         </section>
 
         <!-- section formulaire -->
-        <section>
+        <section class="formSection">
             <p>Ça vous intéresse ? A vous de mettre la main à la pâte !</p>
             <button type="button" id="buttonSwitch">Je m'enregistre</button>
             <form action="" method="post" class="hidden" id="inscriptionForm">
                 <!-- nom & password -->
-                <label for="user">Nom d'utilisateur</label>
-                <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom" required><br>
-                <label for="password">Code PIN</label>
-                <input type="password" name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required><br>
+                <div class="champUser">
+                    <label for="userName" class="champLabel">Nom d'utilisateur</label>
+                    <input type="text" class="champInput" name="userName" id="userName" placeholder="Votre nom" title="Indiquez votre nom" required>
+                </div>
+                <div class="champPassword">
+                    <label for="password" class="champLabel">Code PIN</label>
+                    <input type="password" class="champInput"  name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required>
+                </div>
                 <!-- choix de l'avatar -->
-                <p>Choisissez votre avatar : </p>
-                <input type="radio" name="avatar" id="avatar1">
-                <label for="avatar1">
-                    <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar2">
-                <label for="avatar2">
-                    <img src="./Images/femme brune.png" alt="avatar de femme" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar3">
-                <label for="avatar3">
-                    <img src="./Images/femme chatain.png" alt="avatar de femme" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar4">
-                <label for="avatar4">
-                    <img src="./Images/homme blond.png" alt="avatar d'homme" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar5">
-                <label for="avatar5">
-                    <img src="./Images/homme brun.png" alt="avatar d'homme" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar6">
-                <label for="avatar6">
-                    <img src="./Images/homme chatain.png" alt="avatar d'homme" class="avatar_icone">
-                </label><br>
-                <input type="radio" name="avatar" id="avatar7">
-                <label for="avatar7">
-                    <img src="./Images/fille2.png" alt="avatar de fille" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar8">
-                <label for="avatar8">
-                    <img src="./Images/fille1.png" alt="avatar de fille" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar9">
-                <label for="avatar9">
-                    <img src="./Images/fille3.png" alt="avatar de fille" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar10">
-                <label for="avatar10">
-                    <img src="./Images/garcon3.png" alt="avatar de garçon" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar11">
-                <label for="avatar11">
-                    <img src="./Images/garcon2.png" alt="avatar de garçon" class="avatar_icone">
-                </label>
-                <input type="radio" name="avatar" id="avatar12">
-                <label for="avatar12">
-                    <img src="./Images/garcon1.png" alt="avatar de garçon" class="avatar_icone">
-                </label><br>
+                    <p>Choisissez votre avatar : </p>
+                    <div class="champAvatar">
+                    <input type="radio" name="avatar" id="avatar1" value="femme_blonde">
+                    <label for="avatar1" checked>
+                        <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar2" value="femme_brune">
+                    <label for="avatar2">
+                        <img src="./Images/femme brune.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar3" value="femme_chatain">
+                    <label for="avatar3">
+                        <img src="./Images/femme chatain.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar4" value="homme_blond">
+                    <label for="avatar4">
+                        <img src="./Images/homme blond.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar5" value="homme_brun">
+                    <label for="avatar5">
+                        <img src="./Images/homme brun.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar6" value="homme_chatain">
+                    <label for="avatar6">
+                        <img src="./Images/homme chatain.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                </div>
+                <div class="champAvatar"> 
+                    <input type="radio" name="avatar" id="avatar7" value="fille_blonde">
+                    <label for="avatar7">
+                        <img src="./Images/fille2.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar8" value="fille_brune">
+                    <label for="avatar8">
+                        <img src="./Images/fille1.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar9" value="fille_chatain">
+                    <label for="avatar9">
+                        <img src="./Images/fille3.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar10" value="garcon_blond">
+                    <label for="avatar10">
+                        <img src="./Images/garcon3.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar11" value="garcon_brun">
+                    <label for="avatar11">
+                        <img src="./Images/garcon2.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar12" value="garcon_chatain">
+                    <label for="avatar12">
+                        <img src="./Images/garcon1.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                </div>
                 <!-- choix de la couleur -->
-                <p> Choisissez votre couleur : </p>
-                <input type="radio" name="color" id="color1">
-                <label for="color1">
-                    <div class="vignetteColor fondRouge"></div>
-                </label>
-                <input type="radio" name="color" id="color2">
-                <label for="color2">
-                    <div class="vignetteColor fondVert"></div>
-                </label>
-                <input type="radio" name="color" id="color3">
-                <label for="color3">
-                    <div class="vignetteColor fondJaune"></div>
-                </label>
-                <input type="radio" name="color" id="color4">
-                <label for="color4">
-                    <div class="vignetteColor fondBleu"></div>
-                </label>
-                <input type="radio" name="color" id="color5">
-                <label for="color5">
-                    <div class="vignetteColor fondOrange"></div>
-                </label>
-                <input type="radio" name="color" id="color6">
-                <label for="color6">
-                    <div class="vignetteColor fondMauve"></div>
-                </label><br>
+                <div>
+                    <p> Choisissez votre couleur : </p>
+                    <input type="radio" name="color" id="color1" value="rouge" checked>
+                    <label for="color1">
+                        <div class="vignetteColor fondRouge"></div>
+                    </label>
+                    <input type="radio" name="color" id="color2" value="vert">
+                    <label for="color2">
+                        <div class="vignetteColor fondVert"></div>
+                    </label>
+                    <input type="radio" name="color" id="color3" value="jaune">
+                    <label for="color3">
+                        <div class="vignetteColor fondJaune"></div>
+                    </label>
+                    <input type="radio" name="color" id="color4" value="bleu">
+                    <label for="color4">
+                        <div class="vignetteColor fondBleu"></div>
+                    </label>
+                    <input type="radio" name="color" id="color5" value="orange">
+                    <label for="color5">
+                        <div class="vignetteColor fondOrange"></div>
+                    </label>
+                    <input type="radio" name="color" id="color6" value="mauve">
+                    <label for="color6">
+                        <div class="vignetteColor fondMauve"></div>
+                    </label>
+                </div>
                 <!-- bouton de validation -->
-                <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+                <div>
+                    <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+                </div>
             </form>
         </section>
     </main>
     
     <footer>
         <section>
-            <h2>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</h2>
+            <span>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</span>
         </section>
         <section>
-            <h2>Voir nos <a href="./cgu.html">Conditions Générales d'Utilisation</a></h2>
+            <span>Voir nos <a href="./cgu.html" target="_blank">Conditions Générales d'Utilisation</a></span>
         </section>
         <section>
-            <h2>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></h2>
+            <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
         </section>
     </footer>
 
     <!-- JAVASCRIPT -->
     <script src="accueil.js"></script>
-</body>
 
+</body>
 </html>

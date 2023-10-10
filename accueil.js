@@ -2,7 +2,7 @@
 const elementBouton = document.getElementById("buttonSwitch");
 
 // lui attribuer un eventlistener
-elementBouton.addEventListener("click", function(){
+elementBouton.addEventListener("click", function() {
     // récupérer le formulaire par son ID
     let elementForm = document.getElementById("inscriptionForm");
     // si la classe est hidden on remplace par une classe show
@@ -13,5 +13,64 @@ elementBouton.addEventListener("click", function(){
     else {
         elementForm.classList.replace("show", "hidden");
     }
+});
+
+// verifier si localstorage est vide ou pas
+// s'il est vide on affiche la page d'accueil
+// si non on affiche la page planning semaine
+let verify = JSON.parse(localStorage.getItem("clef-user"));
+if (verify !== null) {
+    document.location.href="./planningsemaine.html";
+}
+
+// puis créer le prototype de l'objet "utilisateurs"  contenant : id, type, nom, pin, avatar, couleur
+function Users(id, type, nom, pin, avatar, couleur) {
+    this.id = id;
+    this.type = type;
+    this.nom = nom;
+    this.pin = pin;
+    this.avatar = avatar;
+    this.couleur = couleur;
+}
+
+// récupérer le bouton "valier"
+const bouton2 = document.getElementById("boutonAccueilForm");
+
+// lui ajouter un event listener "click"
+// dans la fonction click, récupérer la valeur de chaque élément du formulaire dans des variables
+bouton2.addEventListener("click", function() {
+
+    let inputNom = document.getElementById("userName");
+    let nom = inputNom.value;
+
+    let inputPin = document.getElementById("password");
+    let pin = inputPin.value;
+
+    let avatar = "";
+    for (let i=1; i<=12; i++) {
+        const element = document.getElementById("avatar"+i);
+        if (element.checked) {
+            avatar = element.value;
+            break;
+        } 
+    }
+
+    let couleur = "";
+    for (let i=1; i<=6; i++) {
+        const element = document.getElementById("color"+i);
+        if (element.checked) {
+            couleur = element.value;
+            break;
+        }
+    }
+
+    // avec ça, on crée un objet "utilisateurs"
+    let user1 = new Users (0, "parent", nom, pin, avatar, couleur);
+    // cet objet on le sauvegarde dans le localstorage 
+    localStorage.setItem("clef-user", JSON.stringify([user1]));
+
+    // et on fait une redirection vers la page "calendrier semaine"
+    document.location.href="./planningsemaine.html";
 
 });
+

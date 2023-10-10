@@ -19,13 +19,14 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     font-family: "handlee", cursive;
-    margin: 0px;
+    margin: 0;
 }
-
-header {
-    font-family: "creamcake", cursive;
-    position: fixed;
+header{
+    font-family: "creamcake", cursive; 
     width: 100%;
     height: 120px;
     background: linear-gradient(#489ece, #fdb992);
@@ -33,6 +34,8 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top : 0;
 }
 
 .topnavbar {
@@ -82,8 +85,10 @@ h1 {
 }
 
 main {
-    padding-top: 130px;
+    /* margin-top: 130px; */
     text-align: center;
+    height: 100vh;
+    margin-top : 120px;
 }
 
 h2 {
@@ -194,6 +199,10 @@ a:hover {
     margin-top: 1rem;
 }
 
+#buttonSwitch {
+    width: 20%;
+    align-self: center;
+}
 .avatar_icone {
     width: 50px;
     height: 50px;
@@ -237,14 +246,75 @@ a:hover {
     background-color: rgb(139, 75, 139);
 }
 
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champLabel, .champInput {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    margin: 5px;
+}
+
+.champLabel {
+    background-color: #b4aabb;
+    text-align: center;
+}
+
+
 /* fin de la partie mise en forme du formulaire page d'accueil  */
 
+/* MISE EN FORME CALENDRIER SEMAINE*/
+.semaine {
+    display: flex;
+    flex-direction: row;
+}
+.jour {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/7);
+}
+.jour h3 {
+    background-color: #fcb48a;
+    border-style: solid;
+    margin:1%;
+}
+.buttonTache {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 13px;
+    margin: 10px;
+}
+
+/* FIN MISE EN FORME CALENDRIER SEMAINE */
+
+/* DEBUT MISE EN FORME PAGE RESET */
+
+.reset{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.inputReset{
+    display: inline;
+    justify-content: center;
+    font-size: 25px;
+    margin: 10px;
+}
+.buttonReset {
+    font-size: 30px;
+    margin-top: 20px;
+}
 /* mise en forme footer */
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-size: 6px;
+    justify-content: space-between;
     width: 100%;
     height: 40px;
     border-top: 2px solid #fdb992;
@@ -257,13 +327,13 @@ footer {
 
 /* fin de la mise en forme du footer */
 
-/* 
+/* MEDIA QUERIES */
 @media screen and (max-width: 1100px){
     h1 {
         font-size: 50px;
     }
-} */
-@media screen and (max-width: 680px) {
+} 
+@media screen and (max-width: 680px){
     nav {
         top: -24px;
         left: 0px;
@@ -274,12 +344,12 @@ footer {
         font-size: 4vw;
     }
 }
-
-/* @media screen and (max-width: 490px){
+@media screen and (max-width: 490px){
     h1 {
         font-size: 2vw;
     }
-} */
+} 
+
 /* th{
     background-color: #0b8c9d57
 }
@@ -303,8 +373,8 @@ tr{
 /* main{
     border: 5px solid blue;
     display: flex;
-} */
-ul {
+} 
+ ul {
     list-style-type: none;
 }
 
