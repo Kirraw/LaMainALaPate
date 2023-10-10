@@ -15,12 +15,14 @@
     src: url(/Polices/Simple\ Summer.otf);
 }
 body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     font-family: "handlee", cursive;
-    margin: 0px;
+    margin: 0;
 }
 header{
     font-family: "creamcake", cursive; 
-    position: fixed;
     width: 100%;
     height: 120px;
     background: linear-gradient(#489ece,#fdb992);
@@ -28,6 +30,8 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top : 0;
 }
 .topnavbar {
     width: 100%;
@@ -69,8 +73,10 @@ h1 {
     text-align: center;
  }
 main {
-    padding-top: 130px;
+    /* margin-top: 130px; */
     text-align: center;
+    height: 100vh;
+    margin-top : 120px;
 }
 h2 {
     font-family: 'skullbones', Courier, monospace;
@@ -163,6 +169,10 @@ a:hover {
 margin-top: 1rem;
 }
 
+#buttonSwitch {
+    width: 20%;
+    align-self: center;
+}
 .avatar_icone {
     width: 50px;
     height: 50px;
@@ -205,6 +215,26 @@ margin-top: 1rem;
 .fondMauve {
     background-color: rgb(139, 75, 139);
 }
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champLabel, .champInput {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    margin: 5px;
+}
+
+.champLabel {
+    background-color: #b4aabb;
+    text-align: center;
+}
+
+
 /* fin de la partie mise en forme du formulaire page d'accueil  */
 
 /* MISE EN FORME CALENDRIER SEMAINE*/
@@ -228,8 +258,7 @@ margin-top: 1rem;
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    font-size: 6px;
+    justify-content: space-between;
     width: 100%;
     height: 40px;
     border-top: 2px solid #fdb992;
