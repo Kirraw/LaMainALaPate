@@ -23,12 +23,12 @@
     </header>
     <main>
         <section>
-            <form action="" method="get" id="newTask">
+            <form action="" method="post" id="newTask">
                 <label for="taskName">Nom de la nouvelle tâche :</label>
                 <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche" required><br><br>
                 <label for="taskDay">Sélectionnez un jour :</label>
-                <select name="taskDay" id="taskDay"required>
-                    <option value="lundi" selected="selected">lundi</option>
+                <select name="taskDay" id="taskDay" required>
+                    <option value="lundi">lundi</option>
                     <option value="mardi">mardi</option>
                     <option value="mercredi">mercredi</option>
                     <option value="jeudi">jeudi</option>
@@ -42,12 +42,15 @@
                 <input type="radio" name="attribution" id="bob"><label for="bob">Bob</label>
                 <input type="radio" name="attribution" id="justine"><label for="justine">Justine</label><br><br>
                 <label for="userName">Nom d'utilisateur :</label>
-                <input type="text" name="userName" id="userName"><br><br>
+                <input type="text" name="userName" id="userName" required><br><br>
                 <label for="pinCode">Code Pin :</label>
-                <input type="text" name="pinCode" id="pinCode"><br><br>
+                <input type="text" name="pinCode" id="pinCode" required><br><br>
                 <button type="submit" value="submitTask">Ajouter Tache</button>
             </form>
         </section>
+        <h2 id="test">
+            
+        </h2>
     </main>
     
     <footer>
@@ -61,5 +64,6 @@
             <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
         </section>
     </footer>
+    <script src="tache.js"></script>
 </body>
 </html>
