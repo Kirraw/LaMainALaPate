@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" />
     <title>La Main À La Pâte</title>
+
+
+
+    <!-- Propriété CSS : canvas pour les rectangles des profils, ".t" pour la ligne verticale-->
+    <style>
+        #canvas2 {
+            background-color: rgb(155, 175, 205);
+        }
+
+        .t {
+            border-left: 5px solid darkorange;
+            height: 1000px;
+            position: absolute;
+            left: 50%;
+            margin-left: 45px;
+            top: 100%;
+        }
+    </style>
+
 </head>
 
 <body id="body_membre">
+
+
     <header>
         <!-- HEADER 2 contenant logo, nom ndu site, bouton "membres"-->
         <div class="topnavbar">
@@ -17,28 +38,171 @@
                     <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
                 </a>
             </figure>
-            <h1>La Main À La Pâte</h1>
+            <!--<i> et <div class = t> pour ajouter ligne verticale-->
+            <h1><i>La Main À La Pâte</i></h1>
+            <div class="t"></div>
             <section class="buttonheader">
                 <a href="membres.html"><button type="button">Membres</button></a>
             </section>
-        </div>  
+        </div>
     </header>
+
+
     <main>
-        <section>
-            <h2>Liste comptes parents</h2>
-            <ul>
-                <li>David</li>
-                <li>Marie</li>
-            </ul>
+        <section id="gestion">
+
+            <!-- gestion de profil, création de deux "boîte <div>" pour mettre en forme la page-->
+
+            <!--1ere "boîte <div>" : liste profil-->
+
+            <div id="profil_membre">
+
+                <h2>Profil membre</h2>
+
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas> </div>
+                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
+            </div>
+
+
+            <!--2eme boîte <div>: ajouter un membre-->
+
+            <div id="ajouter_membre">
+
+                <h2>ajouter un membre</h2>
+
+
+                <!--image "plus" pour ajouter un membre-->
+
+                <form action="" method="post" class="" id="inscriptionForm">
+                    <!-- nom & password -->
+
+                    <div id="input">
+                        <label for="user">Nom</label>
+                        <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom"
+                            required><br>
+                        <label for="choisir-son-profil">Profil</label>
+
+                        <select name="type" id="type-de-profil">
+                            <option value="">--Sélectionner--</option>
+                            <option value="parent">parent</option>
+                            <option value="enfant">enfant</option>
+                        </select><br>
+
+
+                        <label for="password">Code PIN</label>
+                        <input type="password" name="password" id="password" title="Choisissez un mot de passe"
+                            placeholder="Code à 6 chiffres" required><br>
+                    </div>
+
+                    <!--<style>
+                        #input {
+                       
+                        }
+                    </style>-->
+
+
+
+                    <!-- choix de l'avatar -->
+                    <p>Choisissez votre avatar : </p>
+                    <input type="radio" name="avatar" id="avatar1">
+                    <label for="avatar1">
+                        <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar2">
+                    <label for="avatar2">
+                        <img src="./Images/femme brune.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar3">
+                    <label for="avatar3">
+                        <img src="./Images/femme chatain.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar4">
+                    <label for="avatar4">
+                        <img src="./Images/homme blond.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar5">
+                    <label for="avatar5">
+                        <img src="./Images/homme brun.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar6">
+                    <label for="avatar6">
+                        <img src="./Images/homme chatain.png" alt="avatar d'homme" class="avatar_icone">
+                    </label><br>
+                    <input type="radio" name="avatar" id="avatar7">
+                    <label for="avatar7">
+                        <img src="./Images/fille2.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar8">
+                    <label for="avatar8">
+                        <img src="./Images/fille1.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar9">
+                    <label for="avatar9">
+                        <img src="./Images/fille3.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar10">
+                    <label for="avatar10">
+                        <img src="./Images/garcon3.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar11">
+                    <label for="avatar11">
+                        <img src="./Images/garcon2.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar12">
+                    <label for="avatar12">
+                        <img src="./Images/garcon1.png" alt="avatar de garçon" class="avatar_icone">
+                    </label><br>
+                    <!-- choix de la couleur -->
+                    <p> Choisissez votre couleur : </p>
+                    <input type="radio" name="color" id="color1">
+                    <label for="color1">
+                        <div class="vignetteColor fondRouge"></div>
+                    </label>
+                    <input type="radio" name="color" id="color2">
+                    <label for="color2">
+                        <div class="vignetteColor fondVert"></div>
+                    </label>
+                    <input type="radio" name="color" id="color3">
+                    <label for="color3">
+                        <div class="vignetteColor fondJaune"></div>
+                    </label>
+                    <input type="radio" name="color" id="color4">
+                    <label for="color4">
+                        <div class="vignetteColor fondBleu"></div>
+                    </label>
+                    <input type="radio" name="color" id="color5">
+                    <label for="color5">
+                        <div class="vignetteColor fondOrange"></div>
+                    </label>
+                    <input type="radio" name="color" id="color6">
+                    <label for="color6">
+                        <div class="vignetteColor fondMauve"></div>
+                    </label><br>
+                    <!-- confirmation du nom et du code PIN + bouton de validation -->
+
+                    <label for="user"></label>
+                    <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom"
+                        required>
+                    <label for="user"></label><br>
+                    <input type="text" name="user" id="user" placeholder="Votre code PIN" title="Indiquez votre nom"
+                        required><br>
+                    <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+
+                </form>
+
+
+
+            </div>
+
         </section>
-        <section>
-            <h2>Liste comptes enfants</h2>
-            <ul>
-                <li>Justine</li>
-                <li>Pierre</li>
-            </ul>
-        </section>
+
+
+
     </main>
+
+
     <footer>
         <section>
             <span>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</span>
@@ -50,6 +214,12 @@
             <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
         </section>
     </footer>
+    <script>
+        var canvas = document.getElementById('canvas1');
+        var contexte = canvas.getContext('2d');
+
+
+    </script>
 </body>
 
 </html>
