@@ -39,7 +39,17 @@ function onSubmit(e){
         }
     }
     let test = JSON.parse(localStorage.getItem("clef-user"));
+
+    let utilisateurTrouve = false;
+    // boucle sur les utilisateurs du tableau clef-user
+        // si utilisateur a prenom == userName et pin == pinCode => utilisateurTrouve = true
     
+    // si utilisateurTrouve == true
+        // on enregistre la tache
+    // sinon 
+        // on affiche un erreur sans enregistrer la tache
+
+
     console.log(test[0].nom); // A finir
     // if (userName.value == localStorage.getItem("clef-user")){
     //     if (pinCode.value == localStorage.getItem("clef-user")){
