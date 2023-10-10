@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- lien CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>La Main À La Pâte</title>
 </head>
@@ -29,15 +30,32 @@
 
         <!-- section images -->
         <section>
-            <h2>images</h2>
-            <hr />
-        </section>
+           <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="./img.carousel/ballon.jpg" style="width:50%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img src="./img.carousel/cuisiner.jpg" style="width:50%">
+                </div>
+  
+                <div class="mySlides fade">
+                    <img src="./img.carousel/raquettes.jpg" style="width:50%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="./img.carousel/surf.jpg" style="width:50%">
+                </div>
+        </section><hr>
 
         <!-- section formulaire -->
         <section class="formSection">
             <p>Ça vous intéresse ? A vous de mettre la main à la pâte !</p>
             <button type="button" id="buttonSwitch">Je m'enregistre</button>
-            <form action="" method="post" class="hidden" id="inscriptionForm">
+            <form action="" method="post" class="hidden formulaire-inscription" id="inscriptionForm">
                 <!-- nom & password -->
                 <div class="champUser">
                     <label for="userName" class="champLabel">Nom d'utilisateur</label>
@@ -50,8 +68,8 @@
                 <!-- choix de l'avatar -->
                     <p>Choisissez votre avatar : </p>
                     <div class="champAvatar">
-                    <input type="radio" name="avatar" id="avatar1" value="femme_blonde">
-                    <label for="avatar1" checked>
+                    <input type="radio" name="avatar" id="avatar1" value="femme_blonde" checked> 
+                    <label for="avatar1">
                         <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
                     </label>
                     <input type="radio" name="avatar" id="avatar2" value="femme_brune">
