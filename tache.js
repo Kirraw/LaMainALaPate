@@ -38,7 +38,7 @@ function onSubmit(e){
             break;
         }
     }
-    let nomCheck = JSON.parse(localStorage.getItem("clef-user"));
+    let test = JSON.parse(localStorage.getItem("clef-user"));
     
     console.log(test[0].nom); // A finir
     // if (userName.value == localStorage.getItem("clef-user")){
