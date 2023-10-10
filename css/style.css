@@ -73,10 +73,11 @@ h1 {
     text-align: center;
  }
 main {
-    /* margin-top: 130px; */
     text-align: center;
-    height: 100vh;
+    height: fit-content;
     margin-top : 120px;
+    margin-bottom: 40px;
+    padding-bottom:0.5rem;
 }
 h2 {
     font-family: 'skullbones', Courier, monospace;
@@ -161,6 +162,10 @@ a:hover {
 /* fin des fonds d'écrans */
 
 /* mise en forme du formulaire page d'accueil */
+.formulaire-inscription {
+    height: fit-content;
+}
+
 #inscriptionForm {
     margin-top: 1rem;
 }
@@ -295,6 +300,29 @@ footer {
     bottom: 0;
 }
 /* fin de la mise en forme du footer */
+
+/* mise en forme carousel */
+
+    /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  /* position: relative; */
+  margin: auto;
+}
+
+    /* Fading animation */
+.fade {
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* fin carousel */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1100px){
