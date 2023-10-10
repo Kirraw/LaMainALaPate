@@ -15,7 +15,15 @@
             background-color: rgb(155, 175, 205);
         }
      
-       
+         .t{
+ border-left: 5px solid darkorange;
+ height: 500px;
+ position : absolute;
+ left: 50%;
+ margin-left : 45px;
+ top : 0;
+         }
+
     </style>
 
 </head>
@@ -102,6 +110,17 @@
             <label for="password">Code PIN</label>
             <input type="password" name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required><br>
            
+<!-- confirmation du nom et du code PIN + bouton de validation -->
+
+            <div> 
+            
+            <label for="user"></label>
+            <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom" required> <label for="user"></label>
+            <input type="text" name="user" id="user" placeholder="Votre code PIN" title="Indiquez votre nom" required>
+            <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+        
+            </div>
+            
 
            
 
