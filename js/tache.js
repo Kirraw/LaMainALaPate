@@ -19,9 +19,9 @@ let attribution = "";
 let numTask = (localStorage.getItem("numTask"));
 if (numTask == null) {
     localStorage.setItem("numTask", 0);
-    numTask = "0";
+    numTask = 0;
 }
-parseInt(numTask);
+// parseInt(numTask);
 
 //Initialisation objet "Tâches"  contenant : id, nom de tâche, jour, heure, personne attribuée, nom
 function task (id, name, day, hour, attribut) {
@@ -106,13 +106,21 @@ function onSubmit(e){
     //Vérification Pin
     let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
     if (pinCode.value == pinCheck[0].pin){
-        let validatedTask = new task (numTask, taskName.value, hour.value, taskDay.value, attribution);
-        localStorage.setItem("clef-task"+numTask, JSON.stringify([validatedTask]));
+        let validatedTask = new task (parseInt(numTask), taskName.value, hour.value, taskDay.value, attribution);
+        // si 1ère tache créée, initialiser "clef-task" dans localStorage
+        // sinon ajouter nouvelle tâche dans clef-task avec un push
+        if (numTask == 0){
+            localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
+        } else {
+        let allTasks = JSON.parse(localStorage.getItem("clef-user"));
+        allTasks.push(validatedTask);
+        localStorage.setItem("clef-task", JSON.stringify([allTasks]));
+        }       
         //Incrémentation numéro de tâche
         numTask++;
-        String(numTask);
         localStorage.setItem("numTask", numTask);
-        document.location.href="./planningsemaine.html";            
+        document.location.href="./planningsemaine.html";
+         
     } else {
         display.innerHTML = `Code Pin incorrect`;
     }
