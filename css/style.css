@@ -170,6 +170,11 @@ a:hover {
     font-size: 13px;
     margin: 10px;
 }
+#task {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FIN MISE EN FORME CALENDRIER SEMAINE */
 
 
