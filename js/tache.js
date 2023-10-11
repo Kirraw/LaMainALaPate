@@ -114,7 +114,8 @@ function onSubmit(e){
         } else {
         let allTasks = JSON.parse(localStorage.getItem("clef-user"));
         allTasks.push(validatedTask);
-        localStorage.setItem("clef-task", JSON.stringify([allTasks]));
+        console.log(allTasks);
+        localStorage.setItem("clef-task", JSON.stringify(allTasks));
         }       
         //Incrémentation numéro de tâche
         numTask++;
