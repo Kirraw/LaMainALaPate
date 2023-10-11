@@ -29,7 +29,7 @@ for (let i=1; i<=6; i++) {
 
 // variable formulaire 
 
-class formerProfile = {
+let mon-profilclass formerProfile = {
     let nom = inputNom.value;
     let pin = inputPin.value;
     let avatar = "";
@@ -41,26 +41,25 @@ class formerProfile = {
 let value = true;
 
 
+//remplissage du rectangle
+var canvas = document.getElementById("canvas2");
+var context = canvas.getContext("2d");
+
+
+var mon_profil = document.querySelector('validation_profil');
+validation_profil.addEventListener('click', function(e) {
+    var cascade = new Image();
+    cascade.src = "tonimage.png";
+    context.drawImage(cascade,0,0);
+});
+
+
+
+
+//dès qu'on clique sur valider, le profil s'affiche 
+
+
+
 //affichage du rectangle
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//function Users(id, type, nom, pin, avatar, couleur) 
-    //{ this.id = id;
-        this.type = type;
-        this.nom = nom;
-        this.pin = pin;
-        this.avatar = avatar;
-        this.couleur = couleur;//
 
