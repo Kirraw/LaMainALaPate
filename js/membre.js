@@ -41,6 +41,9 @@ class formerProfile = {
 let value = true;
 
 
+//affichage du rectangle
+
+
 
 
 
