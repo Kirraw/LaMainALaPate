@@ -106,20 +106,20 @@ function onSubmit(e){
     //Vérification Pin
     let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
     if (pinCode.value == pinCheck[0].pin){
-        let validatedTask = new task (parseInt(numTask), taskName.value, hour.value, taskDay.value, attribution);
+        let validatedTask = new task (numTask, taskName.value, hour.value, taskDay.value, attribution);
         // si 1ère tache créée, initialiser "clef-task" dans localStorage
         // sinon ajouter nouvelle tâche dans clef-task avec un push
         if (numTask == 0){
             localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
         } else {
-        let allTasks = JSON.parse(localStorage.getItem("clef-user"));
+        let allTasks = JSON.parse(localStorage.getItem("clef-task"));
         allTasks.push(validatedTask);
-        console.log(allTasks);
         localStorage.setItem("clef-task", JSON.stringify(allTasks));
         }       
-        //Incrémentation numéro de tâche
+        //Incrémentation et sauvegarde du nombre/numéro de tâches
         numTask++;
         localStorage.setItem("numTask", numTask);
+        //Redirection vers planning
         document.location.href="./planningsemaine.html";
          
     } else {
