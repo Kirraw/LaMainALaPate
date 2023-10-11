@@ -5,6 +5,37 @@ if (verify == null) {
     document.location.href="./index.html";
 }
 
+const listeMembres = document.getElementById("profil_membre");
+const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
+for (utilisateur of utilisateurs) {
+    // on doit créer un article par utilisateur <article>
+    // const article = ce qu'il faut pour créer l'article
+
+    // on doit ajouter une class à l'<article>
+    // article.classList.add ... + la suite
+
+    // on doit créer un titre 
+    // const titre = ce qu'il faut pour créer un h2 par exemple <h2>
+
+    // on doit mettre le prénom de l'utilisateur dans le titre
+    // titre.innerText = .... + la suite
+    
+    // on doit créer une image pour l'icone
+    // const icone = ce qu'il faut pour créer l'icone <img>
+
+    // on doit définir l'attribut src de l'icone
+    // icone.setAttribute("src", + la suite) le but est d'avoir <img src="./le chemin de l'image">
+
+    // on doit ajouter le titre dans l'article
+    // article.apprend(titre)
+
+    // on doit ajouter l'image dans l'article
+    // article.append(icone)
+
+    // on doit ajouter l'article dans la colonne "liste des membres"
+    // listeMembres.append(article)
+}
+
 // le prototype de l'objet "utilisateurs"  contenant : id, nom, avatar, couleur
 function Users(id, type, nom, pin, avatar, couleur) {
     this.id = id;
@@ -22,7 +53,7 @@ const bouton = document.getElementById("boutonForm");
 // dans la fonction click, récupérer la valeur de chaque élément du formulaire dans des variables
 bouton.addEventListener("click", function() {
 
-       let type = "utilisateur";
+    let type = "utilisateur";
 
     let inputNom = document.getElementById("user");
     let nom = inputNom.value;
@@ -46,15 +77,25 @@ bouton.addEventListener("click", function() {
         }
     }
 
+    // on récupère le PIN du parent
+    let code = document.getElementById("password");
     // on récupère les données du tableau users
     let tableauUser = JSON.parse(localStorage.getItem("clef-user"));
-    // on attribue un id de la longueur du tableau
-    let id = tableauUser.length;
-    // avec ça, on alimente le tableau Users d'un nouvel objet qui aura l'indice [1] (car le premier a l'indice [0]):
-    let user = new Users (id, type, nom, pin, avatar, couleur);
-    tableauUser.push(user);
-    // cet objet on le sauvegarde dans le localstorage 
-    localStorage.setItem("clef-user", JSON.stringify(tableauUser));
+    // comparer le PIN du 1er utilisateur du tableauUser avec le password saisi dans le formulaire
+    // pour ca on crée une const 
+    const premierUser = tableauUser[0];
+    // puis if else 
+    if (premierUser.pin === code.value) {
+        // on attribue un id de la longueur du tableau
+        let id = tableauUser.length;
+        // avec ça, on alimente le tableau Users d'un nouvel objet qui aura l'indice [1] (car le premier a l'indice [0]):
+        let user = new Users (id, type, nom, pin, avatar, couleur);
+        tableauUser.push(user);
+        // cet objet on le sauvegarde dans le localstorage 
+        localStorage.setItem("clef-user", JSON.stringify(tableauUser));
+        // on recharge la page pour afficher automatiquement les membres créés
+        window.location.reload();
+        } else {
+            alert("Code PIN erroné !");
+        }
 });
-
-// maintenant au click sur  id="boutonForm" il faut afficher les objets du tableau dans une liste sur la gauche de la page dans la boite <div id="profil_membre"> : 
