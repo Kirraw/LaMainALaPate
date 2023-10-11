@@ -15,7 +15,13 @@ let radios = document.querySelectorAll('input[name="attribution"]');
 let pinCode = document.querySelector("#pinCode");
 let attribution = "";
 
-
+// Initialisation du numéro de tâche
+let numTask = (localStorage.getItem("numTask"));
+if (numTask == null) {
+    localStorage.setItem("numTask", 0);
+    numTask = 0;
+}
+// parseInt(numTask);
 
 //Initialisation objet "Tâches"  contenant : id, nom de tâche, jour, heure, personne attribuée, nom
 function task (id, name, day, hour, attribut) {
@@ -90,20 +96,31 @@ newTask.addEventListener("submit", onSubmit);
 
 function onSubmit(e){
     e.preventDefault();
+    //Sélection boutton radio
     for (const radio of radios){
         if (radio.checked){
             attribution = radio.id;
             break;
         }
     }
+    //Vérification Pin
     let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
-    console.log(pinCheck[0]);
     if (pinCode.value == pinCheck[0].pin){
-        let validatedTask = new task (0, taskName.value, hour.value, taskDay.value, attribution);
-        localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
-        afficherTaches();
-        // numTask++;
-        document.location.href="./planningsemaine.html";            
+        let validatedTask = new task (parseInt(numTask), taskName.value, hour.value, taskDay.value, attribution);
+        // si 1ère tache créée, initialiser "clef-task" dans localStorage
+        // sinon ajouter nouvelle tâche dans clef-task avec un push
+        if (numTask == 0){
+            localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
+        } else {
+        let allTasks = JSON.parse(localStorage.getItem("clef-user"));
+        allTasks.push(validatedTask);
+        localStorage.setItem("clef-task", JSON.stringify([allTasks]));
+        }       
+        //Incrémentation numéro de tâche
+        numTask++;
+        localStorage.setItem("numTask", numTask);
+        document.location.href="./planningsemaine.html";
+         
     } else {
         display.innerHTML = `Code Pin incorrect`;
     }
