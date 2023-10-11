@@ -48,4 +48,7 @@ function onSubmit(e){
         display.innerHTML = `Code Pin incorrect`;
     }
 
+            let task0 = new task (0, taskName.value, hour.value, taskDay.value, attribution, userName.value, pinCode.value);
+            localStorage.setItem("clef-task", JSON.stringify([task0]));
+    
 }
