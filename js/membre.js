@@ -57,6 +57,13 @@ bouton.addEventListener("click", function() {
     localStorage.setItem("clef-user", JSON.stringify(tableauUser));
 });
 
+members.innerHTML = `${localStorage.getItem("clef-user")}`;
+
+
+
+// let member = localStorage.getItem("clef-user");
+
+// members.innerHTML = `${member.nom}`;
 
 
 // // ajouter un membre dans un formulaire
