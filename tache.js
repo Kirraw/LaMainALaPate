@@ -11,19 +11,18 @@ let taskName = document.querySelector("#taskName");
 let taskDay = document.querySelector("#taskDay");
 let hour = document.querySelector("#hour");
 let radios = document.querySelectorAll('input[name="attribution"]');
-let userName = document.querySelector("#userName");
 let pinCode = document.querySelector("#pinCode");
 let attribution = "";
 
+
+
 //Initialisation objet "Tâches"  contenant : id, nom de tâche, jour, heure, personne attribuée, nom
-function task (id, name, day, hour, attribut, userName, pinCode) {
+function task (id, name, day, hour, attribut) {
     this.id = id;
     this.name = name;
     this.day = day;
     this.hour = hour;
     this.attribut = attribut;
-    this.userName = userName;
-    this.pinCode = pinCode;
 }
 
 
@@ -38,19 +37,15 @@ function onSubmit(e){
             break;
         }
     }
-    let test = JSON.parse(localStorage.getItem("clef-user"));
+    let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
     
-    console.log(test[0].nom); // A finir
-    // if (userName.value == localStorage.getItem("clef-user")){
-    //     if (pinCode.value == localStorage.getItem("clef-user")){
-    //         let task0 = new task (0, taskName.value, hour.value, taskDay.value, attribution, userName.value, pinCode.value);
-    //         localStorage.setItem("clef-task", JSON.stringify([task0]));
-    //         document.location.href="./planningsemaine.html";
-    //     } else {
-    //         // mauvais pin
-    //     }
-    // } else {
-    //     //mauvais nom d'utilisateur
-    // }
+    if (pinCode.value == pinCheck[0].pin){
+        let validatedTask = new task (numTask, taskName.value, hour.value, taskDay.value, attribution);
+        localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
+        // numTask++;
+        document.location.href="./planningsemaine.html";            
+    } else {
+        display.innerHTML = `Code Pin incorrect`;
+    }
 
 }
