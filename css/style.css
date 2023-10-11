@@ -145,7 +145,6 @@ a:hover {
     background-attachment: fixed;
     background-size: cover;
 }
-
 /* fin des fonds d'écrans */
 
 
@@ -171,7 +170,6 @@ a:hover {
     font-size: 13px;
     margin: 10px;
 }
-
 /* FIN MISE EN FORME CALENDRIER SEMAINE */
 
 
@@ -189,7 +187,6 @@ footer {
     position: fixed;
     bottom: 0;
 }
-
 /* fin de la mise en forme du footer */
 
 
@@ -217,41 +214,6 @@ footer {
     }
 } 
 
-/* th{
-    background-color: #0b8c9d57
-}
-th,td{
-    border: 1px solid black;
-    padding: 8px;
-}
-table{
-    table-layout: fixed;
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;   
-}
-tr{
-    font-family: 'simpleSummer', sans-serif;
-    font-weight: bolder;
-    font-size: 25px;
-} */
-
-/* main{
-    border: 5px solid blue;
-    display: flex;
-} 
- ul {
-    list-style-type: none;
-}
-
-li {
-    border: 2px solid red;
-    display: inline-block;
-    width: 13.6%;
-    text-align: center;
-}
-
 /*mise en page de page "membre" */
 
 #profil_membre {
@@ -274,5 +236,3 @@ justify-content: center;
 #gestion {
     display: flex;
 }
-
-
