@@ -3,7 +3,7 @@ if (verify == null) {
     document.location.href="./index.html";
 }
 
-function Vignette(id, titre, couleur, avatar) {
+function Taches(id, titre, couleur, avatar) {
     this.id = id;
     this.titre = titre;
     this.couleur = couleur;
@@ -14,20 +14,20 @@ function recupererDansLeLocalStorage(clef) {
     return JSON.parse(localStorage.getItem(clef));
 }
 
-function nouvelleIdTache() {
-    let taches = localStorage.getItem("clef-task");
-    return taches.length;
+function nouvelleIdTaches() {
+    let taches = localStorage.setItem("clef-task");
+    console.log(taches);
 }
 
-function creerTachesElement (TachesObjet) {
+function creerTachesElement (taches) {
     let divTaches = document.createElement("div");
     divTaches.classList.add("taches");
-    // divTaches.classList.add("bg-"+tachesObjet.couleur);
+    divTaches.classList.add("bg-"+taches[2]);
     let divLigne1 = document.createElement("div");
     divLigne1.classList.add("taches-ligne");
     let spanTitre = document.createElement("span");
     spanTitre.classList.add("taches-title");
-    spanTitre.innerText = "Titre"+vignetteObjet.id;
+    spanTitre.innerText = "Titre"+taches.id;
     let spanPhoto = document.createElement("span");
     spanPhoto.classList.add("taches-photo");
     divLigne1.append(spanTitre);
@@ -54,6 +54,10 @@ function afficherTaches() {
         ajouterTachesDansDOM(tachesElement);
     }    
 }
+
+// let nouvelId = nouvelleIdTaches();
+// let taches = recupererDansLeLocalStorage("clef-task");
+//     taches.push(tachesObjet);
 
 console.log(recupererDansLeLocalStorage ("clef-task"));
 

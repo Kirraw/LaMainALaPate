@@ -40,7 +40,7 @@ function onSubmit(e){
     let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
     
     if (pinCode.value == pinCheck[0].pin){
-        let validatedTask = new task (numTask, taskName.value, hour.value, taskDay.value, attribution);
+        let validatedTask = new task (0, taskName.value, hour.value, taskDay.value, attribution);
         localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
         // numTask++;
         document.location.href="./planningsemaine.html";            
