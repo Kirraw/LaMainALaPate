@@ -8,9 +8,9 @@
     <title>La Main À La Pâte</title>
 </head>
 
-<body id="body_calendrier">
+<body id="body_calendrier" onload="afficherTaches()">
     <header>
-        <!-- HEADER 2 contenant logo, nom ndu site, bouton "membres"-->
+        <!-- HEADER 2 contenant logo, nom du site, bouton "membres"-->
         <div class="topnavbar">
             <figure id="logo">
                 <a href="index.html">
@@ -33,6 +33,8 @@
             <section class="semaine">
                 <div id="lundi" class="jour">
                     <h3>Lundi</h3>
+                    <button>button</button>
+                    <div id="task"></div>
                 </div>
                 <div id="mardi" class="jour">
                     <h3>Mardi</h3>
@@ -67,5 +69,6 @@
         </section>
     </footer>
     <script src="./js/planningSemaine.js"></script>
+
 </body>
 </html>
