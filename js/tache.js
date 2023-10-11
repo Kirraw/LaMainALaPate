@@ -1,3 +1,4 @@
+
 // verifier si localstorage est vide
 // si oui, renvoie à la page d'accueil
 let verify = JSON.parse(localStorage.getItem("clef-user"));
@@ -11,21 +12,78 @@ let taskName = document.querySelector("#taskName");
 let taskDay = document.querySelector("#taskDay");
 let hour = document.querySelector("#hour");
 let radios = document.querySelectorAll('input[name="attribution"]');
-let userName = document.querySelector("#userName");
 let pinCode = document.querySelector("#pinCode");
 let attribution = "";
 
+
+
 //Initialisation objet "Tâches"  contenant : id, nom de tâche, jour, heure, personne attribuée, nom
-function task (id, name, day, hour, attribut, userName, pinCode) {
+function task (id, name, day, hour, attribut) {
     this.id = id;
     this.name = name;
     this.day = day;
     this.hour = hour;
     this.attribut = attribut;
-    this.userName = userName;
-    this.pinCode = pinCode;
 }
 
+function Vignette(id, titre, couleur, avatar) {
+    this.id = id;
+    this.titre = titre;
+    this.couleur = couleur;
+    this.avatar = avatar;
+}
+
+function recupererDansLeLocalStorage(clef) {
+    return JSON.parse(localStorage.getItem(clef));
+}
+
+function nouvelleIdTache() {
+    let taches = localStorage.getItem("clef-task");
+console.log(taches);
+}
+
+function creerTachesElement () {
+    let tableauUser = recupererDansLeLocalStorage("clef-user");
+    let tableauTache = recupererDansLeLocalStorage("clef-task");
+    let divTaches = document.createElement("div");
+    divTaches.classList.add("taches");
+    divTaches.classList.add("fond"+tableauUser[0].couleur);
+    console.log(tableauUser[0].couleur);
+    let divLigne1 = document.createElement("div");
+    divLigne1.classList.add("taches-ligne");
+    let spanTitre = document.createElement("span");
+    spanTitre.classList.add("taches-title");
+    spanTitre.innerText = "Titre"+tableauTache[0].name;
+    console.log(tableauTache[0].name);
+    let spanPhoto = document.createElement("span");
+    spanPhoto.classList.add("taches-photo");
+    divLigne1.append(spanTitre);
+    // divLigne1.append(spanPhoto);
+    // let divLigne2 = document.createElement("div");
+    // // let input1 = document.createElement("input");
+    // // input1.setAttribute("type", "text");
+    // // input1.setAttribute("value","Un commentaire");
+    // divLigne2.append(input1);
+    divTaches.append(divLigne1);
+    // divTaches.append(divLigne2);
+    console.log(divTaches);
+    return spanTitre;
+}
+
+function ajouterTachesDansDOM(tachesElement) {
+    let taches = document.getElementById("task");
+    taches.append(tachesElement);
+}
+
+function afficherTaches() {
+    const tachesTableau = recupererDansLeLocalStorage("clef-task");
+    for (let i=0; i < tachesTableau.length; i++) {
+        let tachesElement = creerTachesElement(tachesTableau[i]);
+        ajouterTachesDansDOM(tachesElement);
+    }    
+}
+
+console.log(recupererDansLeLocalStorage ("clef-task"));
 
 //Event pour boutton submit
 newTask.addEventListener("submit", onSubmit);
@@ -38,29 +96,16 @@ function onSubmit(e){
             break;
         }
     }
-    let test = JSON.parse(localStorage.getItem("clef-user"));
-
-    let utilisateurTrouve = false;
-    // boucle sur les utilisateurs du tableau clef-user
-        // si utilisateur a prenom == userName et pin == pinCode => utilisateurTrouve = true
-    
-    // si utilisateurTrouve == true
-        // on enregistre la tache
-    // sinon 
-        // on affiche un erreur sans enregistrer la tache
-
-
-    console.log(test[0].nom); // A finir
-    // if (userName.value == localStorage.getItem("clef-user")){
-    //     if (pinCode.value == localStorage.getItem("clef-user")){
-    //         let task0 = new task (0, taskName.value, hour.value, taskDay.value, attribution, userName.value, pinCode.value);
-    //         localStorage.setItem("clef-task", JSON.stringify([task0]));
-    //         document.location.href="./planningsemaine.html";
-    //     } else {
-    //         // mauvais pin
-    //     }
-    // } else {
-    //     //mauvais nom d'utilisateur
-    // }
-
+    let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
+    console.log(pinCheck[0]);
+    if (pinCode.value == pinCheck[0].pin){
+        let validatedTask = new task (0, taskName.value, hour.value, taskDay.value, attribution);
+        localStorage.setItem("clef-task", JSON.stringify([validatedTask]));
+        afficherTaches();
+        // numTask++;
+        document.location.href="./planningsemaine.html";            
+    } else {
+        display.innerHTML = `Code Pin incorrect`;
+    }
+            
 }
