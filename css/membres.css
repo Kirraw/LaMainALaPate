@@ -1,0 +1,120 @@
+/*mise en page de page "membre" */
+
+#profil_membre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    height: 800px;
+}
+
+#ajouter_membre {
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#gestion {
+    display: flex;
+}
+
+/*Fond d'écran*/
+
+#body_membre {
+    background-image: url(/Images/membres.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* avatar et carré de couleur*/
+
+
+#boutonForm {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.avatar_icone {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.vignetteColor {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.fondRouge {
+    background-color: rgb(173, 53, 53);
+}
+
+.fondVert {
+    background-color: rgb(38, 107, 38);
+}
+
+.fondJaune {
+    background-color: rgb(216, 216, 52);
+}
+
+.fondBleu {
+    background-color: rgb(52, 52, 228);
+}
+
+.fondOrange {
+    background-color: rgb(230, 162, 36);
+}
+
+.fondMauve {
+    background-color: rgb(139, 75, 139);
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.champInput {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    margin: 5px;
+}
+
+.champLabel {
+    background-color: #b4aabb;
+    text-align: center;
+}
+
+
+/* Propriété CSS : canvas pour les rectangles des profils, ".t" pour la ligne verticale*/
+
+
+#canvas2 {
+    background-color: rgb(155, 175, 205);
+}
+
+.t {
+    border-left: 5px solid darkorange;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: 45px;
+    top: 100%;
+}
+
