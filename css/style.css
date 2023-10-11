@@ -159,12 +159,7 @@ a:hover {
     background-size: cover;
 }
 
-#body_membre {
-    background-image: url(/Images/membres.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
 
 #body_cgu {
     background-image: url(/Images/cgu.png);
@@ -412,27 +407,6 @@ li {
     text-align: center;
 }
 
-/*mise en page de page "membre" */
 
-#profil_membre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    width:50%;
-    height: 800px;
-}
-
-#ajouter_membre {
-     width:50%;
-     height: 800px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-#gestion {
-    display: flex;
-}
 
 
