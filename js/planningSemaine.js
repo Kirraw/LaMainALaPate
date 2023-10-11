@@ -14,36 +14,41 @@ function recupererDansLeLocalStorage(clef) {
     return JSON.parse(localStorage.getItem(clef));
 }
 
-function nouvelleIdTaches() {
-    let taches = localStorage.setItem("clef-task");
-    console.log(taches);
+function nouvelleIdTache() {
+    let taches = localStorage.getItem("clef-task");
+console.log(taches);
 }
 
-function creerTachesElement (taches) {
+function creerTachesElement () {
+    let tableauUser = recupererDansLeLocalStorage("clef-user");
+    let tableauTache = recupererDansLeLocalStorage("clef-task");
     let divTaches = document.createElement("div");
     divTaches.classList.add("taches");
-    divTaches.classList.add("bg-"+taches[2]);
+    divTaches.classList.add("fond"+tableauUser[0].couleur);
+    console.log(tableauUser[0].couleur);
     let divLigne1 = document.createElement("div");
     divLigne1.classList.add("taches-ligne");
     let spanTitre = document.createElement("span");
     spanTitre.classList.add("taches-title");
-    spanTitre.innerText = "Titre"+taches.id;
+    spanTitre.innerText = "Titre"+tableauTache[0].name;
+    console.log(tableauTache[0].name);
     let spanPhoto = document.createElement("span");
     spanPhoto.classList.add("taches-photo");
     divLigne1.append(spanTitre);
-    divLigne1.append(spanPhoto);
-    let divLigne2 = document.createElement("div");
-    // let input1 = document.createElement("input");
-    // input1.setAttribute("type", "text");
-    // input1.setAttribute("value","Un commentaire");
-    divLigne2.append(input1);
+    // divLigne1.append(spanPhoto);
+    // let divLigne2 = document.createElement("div");
+    // // let input1 = document.createElement("input");
+    // // input1.setAttribute("type", "text");
+    // // input1.setAttribute("value","Un commentaire");
+    // divLigne2.append(input1);
     divTaches.append(divLigne1);
-    divTaches.append(divLigne2);
-    return divTaches;
+    // divTaches.append(divLigne2);
+    console.log(divTaches);
+    return spanTitre;
 }
 
 function ajouterTachesDansDOM(tachesElement) {
-    let taches = document.getElementById("lundi");
+    let taches = document.getElementById("task");
     taches.append(tachesElement);
 }
 
