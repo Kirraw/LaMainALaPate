@@ -38,19 +38,8 @@ function onSubmit(e){
             break;
         }
     }
-    let test = JSON.parse(localStorage.getItem("clef-user"));
-    
-    console.log(test[0].nom); // A finir
-    // if (userName.value == localStorage.getItem("clef-user")){
-    //     if (pinCode.value == localStorage.getItem("clef-user")){
-    //         let task0 = new task (0, taskName.value, hour.value, taskDay.value, attribution, userName.value, pinCode.value);
-    //         localStorage.setItem("clef-task", JSON.stringify([task0]));
-    //         document.location.href="./planningsemaine.html";
-    //     } else {
-    //         // mauvais pin
-    //     }
-    // } else {
-    //     //mauvais nom d'utilisateur
-    // }
 
+            let task0 = new task (0, taskName.value, hour.value, taskDay.value, attribution, userName.value, pinCode.value);
+            localStorage.setItem("clef-task", JSON.stringify([task0]));
+    
 }
