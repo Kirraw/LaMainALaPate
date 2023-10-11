@@ -21,7 +21,6 @@ if (numTask == null) {
     localStorage.setItem("numTask", 0);
     numTask = 0;
 }
-// parseInt(numTask);
 
 //Initialisation objet "Tâches"  contenant : id, nom de tâche, jour, heure, personne attribuée, nom
 function task (id, name, day, hour, attribut) {
