@@ -12,6 +12,7 @@ const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
 for (let utilisateur of utilisateurs) {
     const option = document.createElement("option");
     option.innerText = utilisateur.nom;
+    option.value = utilisateur.id;
     listeAttributions.append(option);
 }
 
@@ -67,5 +68,4 @@ bouton.addEventListener("click", function(e) {
     } else {
             alert("Code PIN erroné !");
         }
-
    });
