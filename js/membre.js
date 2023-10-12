@@ -7,7 +7,7 @@ if (verify == null) {
 
 const listeMembres = document.getElementById("profil_membre");
 const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
-for (utilisateur of utilisateurs) {
+for (let utilisateur of utilisateurs) {
     // on doit créer un article par utilisateur <article>
     // const article = ce qu'il faut pour créer l'article
     const article = document.createElement("article");
@@ -23,9 +23,14 @@ for (utilisateur of utilisateurs) {
     // on doit créer une image pour l'icone
     // const icone = ce qu'il faut pour créer l'icone <img>
     const icone = document.createElement("img");
+    icone.classList.add("picture");
     // on doit définir l'attribut src de l'icone
     // icone.setAttribute("src", + la suite) le but est d'avoir <img src="le chemin de l'image">
-    icone.setAttribute("src", utilisateur.avatar);
+    icone.setAttribute("src", "./Images/"+utilisateur.avatar+".png");
+
+    // on doit créer une class pour le background
+    article.classList.add("fond"+utilisateur.couleur);
+    // on doit ajouter
     // on doit ajouter le titre dans l'article
     // article.apprend(titre)
     article.append(titre);
