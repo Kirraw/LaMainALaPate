@@ -8,12 +8,12 @@
     <title>La Main À La Pâte</title>
 </head>
 
-<body id="body_calendrier" onload="afficherTaches()">
+<body id="body_calendrier">
     <header>
         <!-- HEADER 2 contenant logo, nom du site, bouton "membres"-->
         <div class="topnavbar">
             <figure id="logo">
-                <a href="index.html">
+                <a href="planningsemaine.html">
                     <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
                 </a>
             </figure>
@@ -30,10 +30,9 @@
             <h2>Planning Semaine</h2>
             <a href="/reset.html"><button>Nouvelle Semaine</button></a>
             </div>
-            <section class="semaine">
+            <section id="semaine" class="semaine">
                 <div id="lundi" class="jour" value="lundi">
                     <h3>Lundi</h3>
-                    <div id="task"></div>
                 </div>
                 <div id="mardi" class="jour" value="mardi">
                     <h3>Mardi</h3>
@@ -67,7 +66,7 @@
             <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
         </section>
     </footer>
-    <script src="./js/ajoutTaches.js"></script>
+    <script src="./js/planningSemaine.js"></script>
 
 </body>
 </html>
