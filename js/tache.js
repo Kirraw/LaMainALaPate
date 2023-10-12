@@ -1,4 +1,3 @@
-
 // verifier si localstorage est vide
 // si oui, renvoie à la page d'accueil
 let verify = JSON.parse(localStorage.getItem("clef-user"));
@@ -105,7 +104,7 @@ function onSubmit(e){
     //Vérification Pin
     let pinCheck = JSON.parse(localStorage.getItem("clef-user"));
     if (pinCode.value == pinCheck[0].pin){
-        let validatedTask = new task (numTask, taskName.value, hour.value, taskDay.value, attribution);
+        let validatedTask = new task (numTask, taskName.value, taskDay.value, hour.value, attribution);
         // si 1ère tache créée, initialiser "clef-task" dans localStorage
         // sinon ajouter nouvelle tâche dans clef-task avec un push
         if (numTask == 0){
