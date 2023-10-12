@@ -40,13 +40,9 @@
 
             <div id="profil_membre">
 
-                <h2>Profil membre</h2>
+                <h2>Liste des membres</h2>
 
-                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
-                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
-                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas> </div>
-                <div class="= Profil parent"><canvas id='canvas2' width='500' height='100'></canvas></div>
-            </div>
+                </div>
 
 
             <!--2eme boîte <div>: ajouter un membre-->
@@ -63,13 +59,13 @@
 
                     <div id="input">
                         <label for="user">Nom</label>
-                        <input type="text" name="user" id="user" placeholder="Votre nom" title="Indiquez votre nom" required><br>
-                        
+                        <input type="text" name="user" id="user" placeholder="Nom du membre" title="nom du membre à ajouter" required>
+                    </div> 
 
 
                     <!-- choix de l'avatar -->
-                    <p>Choisissez votre avatar : </p>
-                    <div class="champAvatar">
+                    <p>Attribuez un avatar : </p>
+                <div class="champAvatar">
                     <input type="radio" name="avatar" id="avatar1" value="femme_blonde" checked> 
                     <label for="avatar1">
                         <img src="./Images/femme blonde.png" alt="avatar de femme" class="avatar_icone">
@@ -123,7 +119,7 @@
                 </div>
                 <!-- choix de la couleur -->
                 <div>
-                    <p> Choisissez votre couleur : </p>
+                    <p>Attribuez une couleur : </p>
                     <input type="radio" name="color" id="color1" value="Rouge" checked>
                     <label for="color1">
                         <div class="vignetteColor fondRouge"></div>
@@ -150,20 +146,16 @@
                     </label>
                 </div>
                     <!-- confirmation  code PIN + bouton de validation -->
-
-                    
-                    <input type="text" name="user" id="user" placeholder="Votre code PIN" title="code à 6 chiffres" required><br>
+                <div class="verificationPin">
+                    <label for="password">Code PIN</label>
+                    <input type="password" name="password" id="password" placeholder="Votre code PIN" title="Indiquez votre code à 6 chiffres" required><br>
                     <button type="button" value="Valider" id="boutonForm">Valider</button>
-
+                </div>
                 </form>
-
-
 
             </div>
 
         </section>
-
-
 
     </main>
 

@@ -1,26 +1,19 @@
 /*mise en page de page "membre" */
 
-#profil_membre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 50%;
-    height: 800px;
-}
-
-#ajouter_membre {
-    width: 50%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #gestion {
     display: flex;
 }
 
+#profil_membre, #ajouter_membre {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 800px;
+}
+
+.verificationPin {
+    padding-top: 20px;
+}
 /*Fond d'écran*/
 
 #body_membre {
