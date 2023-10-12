@@ -4,7 +4,6 @@ let verify = JSON.parse(localStorage.getItem("clef-user"));
 if (verify == null) {
     document.location.href="./index.html";
 }
-
 const listeMembres = document.getElementById("profil_membre");
 const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
 for (let utilisateur of utilisateurs) {
