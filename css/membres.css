@@ -11,7 +11,9 @@
     height: 800px;
 }
 
-
+.verificationPin {
+    padding-top: 20px;
+}
 /*Fond d'écran*/
 
 #body_membre {

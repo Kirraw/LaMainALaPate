@@ -10,30 +10,31 @@ const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
 for (utilisateur of utilisateurs) {
     // on doit créer un article par utilisateur <article>
     // const article = ce qu'il faut pour créer l'article
-
+    const article = document.createElement("article");
     // on doit ajouter une class à l'<article>
     // article.classList.add ... + la suite
-
+    article.classList.add("member");
     // on doit créer un titre 
     // const titre = ce qu'il faut pour créer un h2 par exemple <h2>
-
+    const titre = document.createElement("h2");
     // on doit mettre le prénom de l'utilisateur dans le titre
     // titre.innerText = .... + la suite
-    
+    titre.innerText = "Membre : "+ utilisateur.nom;
     // on doit créer une image pour l'icone
     // const icone = ce qu'il faut pour créer l'icone <img>
-
+    const icone = document.createElement("img");
     // on doit définir l'attribut src de l'icone
-    // icone.setAttribute("src", + la suite) le but est d'avoir <img src="./le chemin de l'image">
-
+    // icone.setAttribute("src", + la suite) le but est d'avoir <img src="le chemin de l'image">
+    icone.setAttribute("src", utilisateur.avatar);
     // on doit ajouter le titre dans l'article
     // article.apprend(titre)
-
+    article.append(titre);
     // on doit ajouter l'image dans l'article
     // article.append(icone)
-
+    article.append(icone);
     // on doit ajouter l'article dans la colonne "liste des membres"
     // listeMembres.append(article)
+    listeMembres.append(article);
 }
 
 // le prototype de l'objet "utilisateurs"  contenant : id, nom, avatar, couleur
