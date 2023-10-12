@@ -25,7 +25,11 @@ for (utilisateur of utilisateurs) {
     const icone = document.createElement("img");
     // on doit définir l'attribut src de l'icone
     // icone.setAttribute("src", + la suite) le but est d'avoir <img src="le chemin de l'image">
-    icone.setAttribute("src", utilisateur.avatar);
+    icone.setAttribute("src" + utilisateur.avatar);
+
+    article.classList.add ("fond"+utilisateur.couleur);
+
+
     // on doit ajouter le titre dans l'article
     // article.apprend(titre)
     article.append(titre);
