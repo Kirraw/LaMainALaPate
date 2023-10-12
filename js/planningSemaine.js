@@ -36,5 +36,6 @@ for (let tache of taches) {
     article.append(div);
     article.append(icone);
     listeTache.append(article);
+    // alert("La tâche a bien été ajoutée");
 }
 
