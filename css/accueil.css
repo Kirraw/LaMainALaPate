@@ -1,0 +1,100 @@
+/* mise en forme du formulaire page d'accueil */
+.formulaire-inscription {
+    height: fit-content;
+}
+
+#inscriptionForm {
+    margin-top: 1rem;
+}
+
+#boutonAccueilForm {
+    margin-top: 1rem;
+}
+
+.avatar_icone {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.vignetteColor {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.fondRouge {
+    background-color: rgb(173, 53, 53);
+}
+
+.fondVert {
+    background-color: rgb(38, 107, 38);
+}
+
+.fondJaune {
+    background-color: rgb(216, 216, 52);
+}
+
+.fondBleu {
+    background-color: rgb(52, 52, 228);
+}
+
+.fondOrange {
+    background-color: rgb(230, 162, 36);
+}
+
+.fondMauve {
+    background-color: rgb(139, 75, 139);
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champLabel, .champInput {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    margin: 5px;
+}
+
+.champLabel {
+    background-color: #b4aabb;
+    text-align: center;
+}
+/* fin de la partie mise en forme du formulaire page d'accueil  */
+
+/* mise en forme carousel */
+.slideshow-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .fade {
+      overflow: hidden;
+      animation-name: fade;
+      animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* fin carousel */
+
+  #body_index {
+    background-image: url(/Images/index.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- lien CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/accueil.css">
     <title>La Main À La Pâte</title>
 </head>
 
-<body>
+<body id="body_index">
+
     <header class="topnavbar">
         <figure id="logo">
             <a href="index.html">
@@ -17,31 +20,151 @@
         <h1>La Main À La Pâte</h1>
         <nav></nav>
     </header>
+
     <main>
+        <!-- section description -->
         <section>
             <h2>La main à la pâte : le numérique au service de votre organisation familiale</h2>
-            <p>Débordés par vos tâches quotidiennes ? Stressés par la possibilité d’oublier certaines tâches ? LA MAIN A
-                LA PATE vous propose un organisateur interactif à usage familial qui vous accompagnera dans la gestion
-                et la planification des tâches quotidiennes de toute la famille. Optimisez votre agenda pour passer plus
-                de temps avec ceux que vous aimez !</p>
+            <p>Débordés par vos tâches quotidiennes ? Stressés par la possibilité d’oublier certaines tâches ? <br>LA MAIN A LA PATE vous propose un organisateur interactif à usage familial qui vous accompagnera dans la gestion et la planification des tâches quotidiennes de toute la famille. <br>Optimisez votre agenda pour passer plus de temps avec ceux que vous aimez !</p>
             <hr />
         </section>
+
+        <!-- section images -->
         <section>
-            <h2>images</h2>
-            <hr />
-        </section>
-        <section>
+           <!-- Carousel -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./img.carousel/ballon.jpg" style="width:50%">
+                </div>
+                  <div class="mySlides fade">
+                    <img src="./img.carousel/cuisiner.jpg" style="width:50%">
+                </div>
+                  <div class="mySlides fade">
+                    <img src="./img.carousel/raquettes.jpg" style="width:50%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./img.carousel/surf.jpg" style="width:50%">
+                </div>
+        </section><hr>
+
+        <!-- section formulaire -->
+        <section class="formSection">
             <p>Ça vous intéresse ? A vous de mettre la main à la pâte !</p>
-            <form action="get">
-                <button><a href="connexionparent.html">Je suis un parent</a></button>
-                <button><a href="connexionenfant.html">Je suis un enfant</a></button>
+            <button type="button" id="buttonSwitch">Je m'enregistre</button>
+            <form action="" method="post" class="hidden formulaire-inscription" id="inscriptionForm">
+                <!-- nom & password -->
+                <div class="champUser">
+                    <label for="userName" class="champLabel">Nom d'utilisateur</label>
+                    <input type="text" class="champInput" name="userName" id="userName" placeholder="Votre nom" title="Indiquez votre nom" required>
+                </div>
+                <div class="champPassword">
+                    <label for="password" class="champLabel">Code PIN</label>
+                    <input type="password" class="champInput"  name="password" id="password" title="Choisissez un mot de passe" placeholder="Code à 6 chiffres" required>
+                </div>
+                <!-- choix de l'avatar -->
+                    <p>Choisissez votre avatar : </p>
+                    <div class="champAvatar">
+                    <input type="radio" name="avatar" id="avatar1" value="femmeblonde" checked> 
+                    <label for="avatar1">
+                        <img src="./Images/femmeblonde.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar2" value="femmebrune">
+                    <label for="avatar2">
+                        <img src="./Images/femmebrune.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar3" value="femmechatain">
+                    <label for="avatar3">
+                        <img src="./Images/femmechatain.png" alt="avatar de femme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar4" value="hommeblond">
+                    <label for="avatar4">
+                        <img src="./Images/hommeblond.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar5" value="hommebrun">
+                    <label for="avatar5">
+                        <img src="./Images/hommebrun.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar6" value="hommechatain">
+                    <label for="avatar6">
+                        <img src="./Images/hommechatain.png" alt="avatar d'homme" class="avatar_icone">
+                    </label>
+                </div>
+                <div class="champAvatar"> 
+                    <input type="radio" name="avatar" id="avatar7" value="filleblonde">
+                    <label for="avatar7">
+                        <img src="./Images/filleblonde.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar8" value="fillebrune">
+                    <label for="avatar8">
+                        <img src="./Images/fillebrune.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar9" value="fillechatain">
+                    <label for="avatar9">
+                        <img src="./Images/fillechatain.png" alt="avatar de fille" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar10" value="garconblond">
+                    <label for="avatar10">
+                        <img src="./Images/garconblond.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar11" value="garconbrun">
+                    <label for="avatar11">
+                        <img src="./Images/garconbrun.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                    <input type="radio" name="avatar" id="avatar12" value="garconchatain">
+                    <label for="avatar12">
+                        <img src="./Images/garconchatain.png" alt="avatar de garçon" class="avatar_icone">
+                    </label>
+                </div>
+                <!-- choix de la couleur -->
+                <div>
+                    <p> Choisissez votre couleur : </p>
+                    <input type="radio" name="color" id="color1" value="Rouge" checked>
+                    <label for="color1">
+                        <div class="vignetteColor fondRouge"></div>
+                    </label>
+                    <input type="radio" name="color" id="color2" value="Vert">
+                    <label for="color2">
+                        <div class="vignetteColor fondVert"></div>
+                    </label>
+                    <input type="radio" name="color" id="color3" value="Jaune">
+                    <label for="color3">
+                        <div class="vignetteColor fondJaune"></div>
+                    </label>
+                    <input type="radio" name="color" id="color4" value="Bleu">
+                    <label for="color4">
+                        <div class="vignetteColor fondBleu"></div>
+                    </label>
+                    <input type="radio" name="color" id="color5" value="Orange">
+                    <label for="color5">
+                        <div class="vignetteColor fondOrange"></div>
+                    </label>
+                    <input type="radio" name="color" id="color6" value="Mauve">
+                    <label for="color6">
+                        <div class="vignetteColor fondMauve"></div>
+                    </label>
+                </div>
+                <!-- bouton de validation -->
+                <div>
+                    <button type="button" value="Valider" id="boutonAccueilForm">Valider</button>
+                </div>
             </form>
-            <hr />
         </section>
     </main>
+    
     <footer>
-        <h2>Mentions légales, etc.</h2>
+        <section>
+            <span>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</span>
+        </section>
+        <section>
+            <span>Voir nos <a href="./cgu.html" target="_blank">Conditions Générales d'Utilisation</a></span>
+        </section>
+        <section>
+            <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici </a></span>
+        </section>
     </footer>
-</body>
 
+    <!-- JAVASCRIPT -->
+    <script src="./js/accueil.js"></script>
+
+</body>
 </html>

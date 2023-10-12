@@ -1,0 +1,25 @@
+/* DEBUT MISE EN FORME PAGE RESET */
+
+.reset{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.inputReset{
+    display: inline;
+    justify-content: center;
+    font-size: 25px;
+    margin: 10px;
+}
+.buttonReset {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#body_reset {
+    background-image: url(/Images/reset.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

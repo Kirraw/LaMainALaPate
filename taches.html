@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>La Main À La Pâte</title>
-</head>
-
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>La Main À La Pâte</title>
+    </head>
+<body id="body_tache">
     <header>
-        <!-- HEADER 2 contenant logo, nom ndu site, bouton profil, bouton deconnexion, navbar -->
+        <!-- HEADER 2 contenant logo, nom ndu site, bouton "membres"-->
         <div class="topnavbar">
             <figure id="logo">
-                <a href="accueilparent.html">
-                    <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80"></a>
+                <a href="planningsemaine.html">
+                    <img src="./images/Logo.png" alt="Logo du site" title="Logo du site" width="80">
+                </a>
             </figure>
             <h1>La Main À La Pâte</h1>
             <section class="buttonheader">
-                <button type="button"><a href="gestionprofilparent.html">Profil</button></a>
-                <button type="button"><a href="index.html">Se déconnecter</button></a>
+                <a href="membres.html"><button type="button">Membres</button></a>
             </section>
-        </div>
-        <nav>
-            <a href="accueilparent.html">Accueil</a>
-            <a href="planningparent.html">Planning</a>
-            <a href="taches.html">Liste de tâches</a>
-        </nav>       
-    </header>     
+        </div>  
     </header>
     <main>
         <section>
-            Liste de tâches intéractive
+            <form action="" method="post" id="newTask"><br>
+                <label for="taskName">Nom de la nouvelle tâche :</label>
+                <input type="text" name="taskName" id="taskName" placeholder="nom de nouvelle tâche" required><br><br>
+                <label for="taskDay">Sélectionnez un jour :</label>
+                <select name="taskDay" id="taskDay" required>
+                    <option value="lundi">lundi</option>
+                    <option value="mardi">mardi</option>
+                    <option value="mercredi">mercredi</option>
+                    <option value="jeudi">jeudi</option>
+                    <option value="vendredi">vendredi</option>
+                    <option value="samedi">samedi</option>
+                    <option value="dimanche">dimanche</option>
+                </select><br><br>
+                <label for="hour">Sélectionnez l'heure :</label>
+                <input type="time" name="hour" id="hour"><br><br>
+                <label for="attribution">à attribuer à :</label>
+                <select id="attribution" name="attribution">
+                </select><br><br>
+                <label for="pinCode">Code Pin :</label>
+                <input type="password" name="pinCode" id="pinCode" required><br><br>
+                <button type="submit" value="submitTask" id="submitTask">Ajouter Tache</button>
+            </form>
         </section>
+        <h2 id="display">
+            
+        </h2>
     </main>
+    
     <footer>
-        <h2>Mentions légales</h2>
+        <section>
+            <span>Ce site a été réalisé par la team The Big Bang Nursery : Aurélie, Déborah, Dorian & Gaelle.</span>
+        </section>
+        <section>
+            <span>Voir nos <a href="./cgu.html" target="_blank">Conditions Générales d'Utilisation</a></span>
+        </section>
+        <section>
+            <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
+        </section>
     </footer>
+    <script src="./js/ajoutTaches.js"></script>
 </body>
 
 </html>

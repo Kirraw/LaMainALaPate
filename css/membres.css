@@ -1,0 +1,147 @@
+/*mise en page de page "membre" */
+
+#gestion {
+    display: flex;
+}
+
+#profil_membre, #ajouter_membre {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+
+#profil_membre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.verificationPin {
+    padding-top: 20px;
+}
+/*Fond d'écran*/
+
+#body_membre {
+    background-image: url(/Images/membres.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* avatar et carré de couleur*/
+
+
+#boutonForm {
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.avatar_icone {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.vignetteColor {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.member {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.picture {
+    width: 100px;
+}
+
+
+.fondRouge {
+    background-color: rgb(173, 53, 53);
+}
+
+.fondVert {
+    background-color: rgb(38, 107, 38);
+}
+
+.fondJaune {
+    background-color: rgb(216, 216, 52);
+}
+
+.fondBleu {
+    background-color: rgb(52, 52, 228);
+}
+
+.fondOrange {
+    background-color: rgb(230, 162, 36);
+}
+
+.fondMauve {
+    background-color: rgb(139, 75, 139);
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.champInput {
+    display: inline-block;
+    width: 220px;
+    height: 20px;
+    margin: 5px;
+}
+
+.champLabel {
+    background-color: #b4aabb;
+    text-align: center;
+}
+
+
+/* Propriété CSS : canvas pour les rectangles des profils, ".t" pour la ligne verticale*/
+
+
+#canvas2 {
+    background-color: rgb(155, 175, 205);
+}
+
+.t {
+    border-left: 2px solid rgba(68, 63, 57, 0.5);
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index: 0;
+}
+
+/* mise en forme footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    border-top: 2px solid #fdb992;
+    border-bottom: 2px solid #fdb992;
+    background-color: #fcb48a;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+/* fin de la mise en forme du footer */
