@@ -3,7 +3,7 @@ if (verify == null) {
     document.location.href="./index.html";
 }
 
-function Vignette(id, titre, couleur, avatar) {
+function Taches(id, titre, couleur, avatar) {
     this.id = id;
     this.titre = titre;
     this.couleur = couleur;
@@ -59,6 +59,10 @@ function afficherTaches() {
         ajouterTachesDansDOM(tachesElement);
     }    
 }
+
+// let nouvelId = nouvelleIdTaches();
+// let taches = recupererDansLeLocalStorage("clef-task");
+//     taches.push(tachesObjet);
 
 console.log(recupererDansLeLocalStorage ("clef-task"));
 
