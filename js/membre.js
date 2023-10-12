@@ -4,7 +4,6 @@ let verify = JSON.parse(localStorage.getItem("clef-user"));
 if (verify == null) {
     document.location.href="./index.html";
 }
-
 const listeMembres = document.getElementById("profil_membre");
 const utilisateurs = JSON.parse(localStorage.getItem("clef-user"));
 for (let utilisateur of utilisateurs) {
@@ -19,7 +18,7 @@ for (let utilisateur of utilisateurs) {
     const titre = document.createElement("h2");
     // on doit mettre le prénom de l'utilisateur dans le titre
     // titre.innerText = .... + la suite
-    titre.innerText = "Membre : "+ utilisateur.nom;
+    titre.innerText = utilisateur.nom;
     // on doit créer une image pour l'icone
     // const icone = ce qu'il faut pour créer l'icone <img>
     const icone = document.createElement("img");
