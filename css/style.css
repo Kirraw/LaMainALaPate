@@ -175,6 +175,30 @@ a:hover {
     flex-direction: column;
 }
 
+.picture {
+    width: 50px;
+    align-self: center;
+    padding-bottom: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+h4, span {
+    display: inline-block;
+}
+
+.affichageTache {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* FIN MISE EN FORME CALENDRIER SEMAINE */
 
 
