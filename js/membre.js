@@ -25,9 +25,11 @@ for (utilisateur of utilisateurs) {
     const icone = document.createElement("img");
     // on doit définir l'attribut src de l'icone
     // icone.setAttribute("src", + la suite) le but est d'avoir <img src="le chemin de l'image">
-    icone.setAttribute("src", utilisateur.avatar);
+    icone.setAttribute("src" + utilisateur.avatar);
     // on doit ajouter le titre dans l'article
     // article.apprend(titre)
+    article.classList.add("fond")
+
     article.append(titre);
     // on doit ajouter l'image dans l'article
     // article.append(icone)
@@ -36,6 +38,8 @@ for (utilisateur of utilisateurs) {
     // listeMembres.append(article)
     listeMembres.append(article);
 }
+
+
 
 // le prototype de l'objet "utilisateurs"  contenant : id, nom, avatar, couleur
 function Users(id, type, nom, pin, avatar, couleur) {
