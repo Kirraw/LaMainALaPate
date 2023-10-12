@@ -68,6 +68,7 @@ bouton2.addEventListener("click", function() {
     let user1 = new Users (0, "parent", nom, pin, avatar, couleur);
     // cet objet on le sauvegarde dans le localstorage 
     localStorage.setItem("clef-user", JSON.stringify([user1]));
+    localStorage.setItem("clef-task", JSON.stringify([]));
 
     // et on fait une redirection vers la page "calendrier semaine"
     document.location.href="./planningsemaine.html";
