@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
-    height: 1200px;
+    height: 100%;
 }
 
 
@@ -55,10 +55,13 @@
     display: inline-block;
     width: 50px;
     height: 50px;
+    border-radius: 25%;
 }
 
 .member {
     width: 80%;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .picture {
@@ -118,7 +121,7 @@
 }
 
 .t {
-    border-left: 5px solid darkorange;
+    border-left: 2px solid rgba(68, 63, 57, 0.5);
     height: 800px;
     position: absolute;
     left: 50%;

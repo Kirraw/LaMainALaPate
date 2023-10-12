@@ -39,11 +39,13 @@
                 <label for="hour">Sélectionnez l'heure :</label>
                 <input type="time" name="hour" id="hour"><br><br>
                 <label for="attribution">à attribuer à :</label>
-                <input type="radio" name="attribution" id="bob"><label for="bob">Bob</label>
-                <input type="radio" name="attribution" id="justine"><label for="justine">Justine</label><br><br>
+                <select id="attribution" name="attribution">
+                    
+                </select><br><br>
+
                 <label for="pinCode">Code Pin :</label>
                 <input type="text" name="pinCode" id="pinCode" required><br><br>
-                <button type="submit" value="submitTask">Ajouter Tache</button>
+                <button type="submit" value="submitTask" id="submitTask">Ajouter Tache</button>
             </form>
         </section>
         <h2 id="display">
@@ -62,6 +64,6 @@
             <span>Nous contacter : <a href="mailto: thebigbangnursery@email.fr">cliquez ici</a></span>
         </section>
     </footer>
-    <script src="./js/tache.js"></script>
+    <script src="./js/ajoutTaches.js"></script>
 </body>
 </html>
