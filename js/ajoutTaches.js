@@ -64,6 +64,7 @@ bouton.addEventListener("click", function(e) {
         // cet objet on le sauvegarde dans le localstorage 
         localStorage.setItem("clef-task", JSON.stringify(tableauTask));
         // on recharge la page pour revenir à la création de taches
+        alert("la tâche a bien été ajoutée au calendrier");
         window.location.reload();
     } else {
             alert("Code PIN erroné !");
